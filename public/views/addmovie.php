@@ -4,16 +4,606 @@
 <meta charset="utf-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Recently added screen</title>
-<style id="applicationStylesheet" type="text/css">
-	.mediaViewInfo {
-		--web-view-name: Recently added screen;
-		--web-view-id: Recently_added_screen;
+<style>
+		.mediaViewInfo {
+		--web-view-name: addmovie;
+		--web-view-id: addmovie;
 		--web-scale-on-resize: true;
 		--web-enable-deep-linking: true;
 	}
 	:root {
-		--web-view-ids: Recently_added_screen;
+		--web-view-ids: addmovie;
+	}
+	input {
+    background-color:	rgba(49,28,105,1);
+	color: white;
+
+}
+
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		border: none;
+	}
+	#Sign_up_screen__1 {
+		position: absolute;
+		width: 1440px;
+		height: 880px;
+		background-color: rgba(148,183,156,1);
+		overflow: hidden;
+		--web-view-name: Sign up screen – 1;
+		--web-view-id: Sign_up_screen__1;
+		--web-scale-on-resize: true;
+		--web-enable-deep-linking: true;
+	}
+	#Background_d {
+		fill: rgba(156,185,157,1);
+	}
+	.Background_d {
+		position: absolute;
+		overflow: visible;
+		width: 1440px;
+		height: 880px;
+		left: 0px;
+		top: 0px;
+	}
+	#Top_d {
+		position: absolute;
+		width: 1440px;
+		height: 100px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Header_d {
+		position: absolute;
+		width: 1440px;
+		height: 100px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Background_Shaodw_d {
+		position: absolute;
+		width: 1440px;
+		height: 100px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Background_Header_ea {
+		fill: rgba(49,28,105,1);
+	}
+	.Background_Header_ea {
+		filter: drop-shadow(0px 8px 16px rgba(0, 0, 0, 0.549));
+		position: absolute;
+		overflow: visible;
+		width: 1488px;
+		height: 148px;
+		left: 0px;
+		top: 0px;
+	}
+	#Search_eg {
+		position: absolute;
+		width: 44px;
+		height: 44px;
+		left: 1321px;
+		top: 28px;
+		overflow: visible;
+	}
+	#Background_Search_Shadow_eh {
+		position: absolute;
+		width: 44px;
+		height: 44px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Background_Search_ed {
+		fill: rgba(41,42,44,1);
+	}
+	.Background_Search_ed {
+		position: absolute;
+		overflow: visible;
+		width: 44px;
+		height: 44px;
+		left: 0px;
+		top: 0px;
+	}
+	#Icon_Search_ej {
+		position: absolute;
+		width: 18px;
+		height: 18px;
+		left: 13px;
+		top: 13px;
+		overflow: visible;
+	}
+	#Shape_ek {
+		fill: rgba(255,255,255,1);
+	}
+	.Shape_ek {
+		filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.204));
+		overflow: visible;
+		position: absolute;
+		width: 30px;
+		height: 30px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Search_eg {
+		position: absolute;
+		width: 44px;
+		height: 44px;
+		left: 1321px;
+		top: 28px;
+		overflow: visible;
+	}
+	#Background_Search_Shadow_eh {
+		position: absolute;
+		width: 44px;
+		height: 44px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Background_Search_ei {
+		fill: rgba(41,42,44,1);
+		stroke: rgba(156,185,157,1);
+		stroke-width: 6px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Background_Search_ei {
+		position: absolute;
+		overflow: visible;
+		width: 50px;
+		height: 50px;
+		left: 0px;
+		top: 0px;
+	}
+	#Icon_Search_ej {
+		position: absolute;
+		width: 18px;
+		height: 18px;
+		left: 13px;
+		top: 13px;
+		overflow: visible;
+	}
+	#Shape_ek {
+		fill: rgba(255,255,255,1);
+	}
+	.Shape_ek {
+		filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.204));
+		overflow: visible;
+		position: absolute;
+		width: 30px;
+		height: 30px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Component_1__8 {
+		position: absolute;
+		width: 44px;
+		height: 44px;
+		left: 1372px;
+		top: 28px;
+		overflow: visible;
+		--web-animation: fadein undefineds undefined;
+		--web-action-type: page;
+		--web-action-target: signup;
+		cursor: pointer;
+	}
+	#Background_Search_Shadow_em {
+		position: absolute;
+		width: 44px;
+		height: 44px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Background_Search_en {
+		fill: rgba(41,42,44,1);
+		stroke: rgba(156,185,157,1);
+		stroke-width: 6px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Background_Search_en {
+		overflow: visible;
+		position: absolute;
+		width: 50px;
+		height: 50px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Icon_material-account-circle_eo {
+		fill: rgba(255,255,255,1);
+	}
+	.Icon_material-account-circle_eo {
+		overflow: visible;
+		position: absolute;
+		width: 30px;
+		height: 30px;
+		left: 7px;
+		top: 7px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Component_68__19 {
+		position: absolute;
+		width: 486px;
+		height: 26px;
+		left: 477px;
+		top: 38px;
+		overflow: visible;
+	}
+	#Home_Movies_Series_R_eq {
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 57px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Fira Sans;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 21px;
+		color: rgba(255,255,255,0.353);
+	}
+	#Home_Movies_Series_R_er {
+		left: 224px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 61px;
+		white-space: nowrap;
+		--web-animation: fadein undefineds undefined;
+		--web-action-type: page;
+		--web-action-target: series;
+		cursor: pointer;
+		text-align: center;
+		font-family: Fira Sans;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 21px;
+		color: rgba(255,255,255,0.353);
+	}
+	#Home_Movies_Series_R_es {
+		left: 338px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 149px;
+		white-space: nowrap;
+		--web-animation: fadein undefineds undefined;
+		--web-action-type: page;
+		--web-action-target: recentlyadded.html;
+		cursor: pointer;
+		text-align: center;
+		font-family: Fira Sans;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 21px;
+		color: rgba(255,255,255,0.353);
+	}
+	#Home_Movies_Series_R_et {
+		left: 107px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 67px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Fira Sans;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 21px;
+		color: rgba(255,255,255,0.353);
+	}
+	#Text_eu {
+		position: absolute;
+		width: 300px;
+		height: 141px;
+		left: 24px;
+		top: 370px;
+		overflow: visible;
+	}
+	#Avengers__Endgame_ev {
+		left: 0px;
+		top: 98px;
+		position: absolute;
+		overflow: visible;
+		width: 301px;
+		height: 43px;
+		text-align: left;
+		font-family: Fira Sans;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 30px;
+		color: rgba(255,255,255,1);
+	}
+	#Avengers__Endgame_ew {
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 301px;
+		height: 43px;
+		text-align: left;
+		font-family: Fira Sans;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 30px;
+		color: rgba(255,255,255,1);
+	}
+	#Component_32__1 {
+		position: absolute;
+		width: 546px;
+		height: 144px;
+		left: 203px;
+		top: 368px;
+		overflow: visible;
+	}
+	#Background_Search_Shadow_ey {
+		position: absolute;
+		width: 546px;
+		height: 44px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Background_Search_ez {
+		fill: rgba(49,28,105,1);
+		stroke: rgba(255,255,255,1);
+		stroke-width: 6px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Background_Search_ez {
+		position: absolute;
+		overflow: visible;
+		width: 552px;
+		height: 50px;
+		left: 0px;
+		top: 0px;
+	}
+	#See_all_e {
+		position: absolute;
+		width: 130px;
+		height: 18px;
+		left: 12px;
+		top: 13px;
+		overflow: visible;
+	}
+	#See_all_fa {
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 131px;
+		white-space: nowrap;
+		line-height: 18px;
+		margin-top: -1.5px;
+		text-align: right;
+		font-family: Fira Sans;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 15px;
+		color: rgba(255,255,255,1);
+		text-transform: uppercase;
+	}
+	#Background_Search_Shadow_e {
+		position: absolute;
+		width: 546px;
+		height: 44px;
+		left: 0px;
+		top: 100px;
+		overflow: visible;
+	}
+	#Component_31__1 {
+		position: absolute;
+		width: 546px;
+		height: 44px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Background_Search_e {
+		fill: rgba(49,28,105,1);
+		stroke: rgba(255,255,255,1);
+		stroke-width: 6px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Background_Search_e {
+		position: absolute;
+		overflow: visible;
+		width: 552px;
+		height: 50px;
+		left: 0px;
+		top: 0px;
+	}
+	#See_all_fb {
+		position: absolute;
+		width: 131px;
+		height: 18px;
+		left: 12px;
+		top: 13px;
+		overflow: visible;
+	}
+	#See_all_fd {
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 132px;
+		white-space: nowrap;
+		line-height: 18px;
+		margin-top: -1.5px;
+		text-align: right;
+		font-family: Fira Sans;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 15px;
+		color: rgba(255,255,255,1);
+		text-transform: uppercase;
+	}
+	#See_all_fd {
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 132px;
+		white-space: nowrap;
+		line-height: 18px;
+		margin-top: -1.5px;
+		text-align: right;
+		font-family: Fira Sans;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 15px;
+		color: rgba(255,255,255,1);
+		text-transform: uppercase;
+	}
+	#Background_Search_Shadow_fa {
+		position: absolute;
+		width: 250px;
+		height: 66px;
+		left: 300px;
+		top: 670px;
+		overflow: visible;
+	}
+	#Background_Search_fa {
+		fill: rgba(49,28,105,1);
+		stroke: rgba(255,255,255,1);
+		stroke-width: 6px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Background_Search_fa {
+		position: absolute;
+		overflow: visible;
+		width: 256px;
+		height: 72px;
+		left: 0px;
+		top: 0px;
+	}
+	#See_all_fe {
+		position: absolute;
+		width: 90px;
+		height: 36px;
+		left: 80px;
+		top: 15px;
+		overflow: visible;
+	}
+	#See_all_ff {
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 91px;
+		white-space: nowrap;
+		text-align: right;
+		font-family: Fira Sans;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 30px;
+		color: rgba(255,255,255,1);
+		text-transform: uppercase;
+	}
+	#w7tyrm8khve61_fc {
+		position: absolute;
+		width: 552px;
+		height: 719px;
+		left: 860px;
+		top: 129px;
+		overflow: visible;
+	}
+	#Rectangle_2_fd {
+		fill: rgba(255,255,255,1);
+		stroke: rgba(112,112,112,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Rectangle_2_fd {
+		position: absolute;
+		overflow: visible;
+		width: 1px;
+		height: 10px;
+		left: 1272px;
+		top: 712px;
+	}
+	#See_all_fg {
+		position: absolute;
+		width: 145px;
+		height: 42px;
+		left: 14px;
+		top: 794px;
+		overflow: visible;
+	}
+	#See_all_fh {
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 146px;
+		white-space: nowrap;
+		--web-animation: fadein undefineds undefined;
+		--web-action-type: page;
+		--web-action-target: signup;
+		cursor: pointer;
+		line-height: 18px;
+		margin-top: -1.5px;
+		text-align: right;
+		font-family: Fira Sans;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 15px;
+		color: rgba(255,255,255,1);
+		text-transform: uppercase;
+	}
+	#See_all_fi {
+		left: 0px;
+		top: 24px;
+		position: absolute;
+		overflow: visible;
+		width: 140px;
+		white-space: nowrap;
+		line-height: 18px;
+		margin-top: -1.5px;
+		text-align: right;
+		font-family: Fira Sans;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 15px;
+		color: rgba(255,255,255,1);
+		text-transform: uppercase;
+	}
+	.mediaViewInfo {
+		--web-view-name: Sign up screen;
+		--web-view-id: Sign_up_screen;
+		--web-scale-on-resize: true;
+		--web-enable-deep-linking: true;
+	}
+	:root {
+		--web-view-ids: Sign_up_screen;
 	}
 	* {
 		margin: 0;
@@ -21,38 +611,742 @@
 		box-sizing: border-box;
 		border: none;
 	}
-	#Recently_added_screen {
+	#Sign_up_screen {
 		position: absolute;
 		width: 1440px;
-		height: 1800px;
+		height: 880px;
 		background-color: rgba(148,183,156,1);
 		overflow: hidden;
-		--web-view-name: Recently added screen;
-		--web-view-id: Recently_added_screen;
+		--web-view-name: Sign up screen;
+		--web-view-id: Sign_up_screen;
 		--web-scale-on-resize: true;
 		--web-enable-deep-linking: true;
 	}
-	@keyframes  {
-	
-	
+
+	#Background_ci {
+		fill: rgba(156,185,157,1);
 	}
-	@keyframes  {
-	
-	
+	.Background_ci {
+		position: absolute;
+		overflow: visible;
+		width: 1440px;
+		height: 880px;
+		left: 0px;
+		top: 0px;
 	}
-	@keyframes  {
-	
-	
+	#Top_cj {
+		position: absolute;
+		width: 1440px;
+		height: 100px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
 	}
-	@keyframes fadein {
-	
-		0% {
-			opacity: 0;
-		}
-		100% {
-			opacity: 1;
-		}
-	
+	#Header_ck {
+		position: absolute;
+		width: 1440px;
+		height: 100px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Background_Shaodw_cl {
+		position: absolute;
+		width: 1440px;
+		height: 100px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Background_Header_cm {
+		fill: rgba(49,28,105,1);
+	}
+	.Background_Header_cm {
+		filter: drop-shadow(0px 8px 16px rgba(0, 0, 0, 0.549));
+		position: absolute;
+		overflow: visible;
+		width: 1488px;
+		height: 148px;
+		left: 0px;
+		top: 0px;
+	}
+	#Search_cs {
+		position: absolute;
+		width: 44px;
+		height: 44px;
+		left: 1321px;
+		top: 28px;
+		overflow: visible;
+	}
+	#Background_Search_Shadow_ct {
+		position: absolute;
+		width: 44px;
+		height: 44px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Background_Search {
+		fill: rgba(41,42,44,1);
+	}
+	.Background_Search {
+		position: absolute;
+		overflow: visible;
+		width: 44px;
+		height: 44px;
+		left: 0px;
+		top: 0px;
+	}
+	#Icon_Search_cv {
+		position: absolute;
+		width: 18px;
+		height: 18px;
+		left: 13px;
+		top: 13px;
+		overflow: visible;
+	}
+	#Shape_cw {
+		fill: rgba(255,255,255,1);
+	}
+	.Shape_cw {
+		filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.204));
+		overflow: visible;
+		position: absolute;
+		width: 30px;
+		height: 30px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Search_cs {
+		position: absolute;
+		width: 44px;
+		height: 44px;
+		left: 1321px;
+		top: 28px;
+		overflow: visible;
+	}
+	#Background_Search_Shadow_ct {
+		position: absolute;
+		width: 44px;
+		height: 44px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Background_Search_cu {
+		fill: rgba(41,42,44,1);
+		stroke: rgba(156,185,157,1);
+		stroke-width: 6px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Background_Search_cu {
+		position: absolute;
+		overflow: visible;
+		width: 50px;
+		height: 50px;
+		left: 0px;
+		top: 0px;
+	}
+	#Icon_Search_cv {
+		position: absolute;
+		width: 18px;
+		height: 18px;
+		left: 13px;
+		top: 13px;
+		overflow: visible;
+	}
+	#Shape_cw {
+		fill: rgba(255,255,255,1);
+	}
+	.Shape_cw {
+		filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.204));
+		overflow: visible;
+		position: absolute;
+		width: 30px;
+		height: 30px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Component_1__2 {
+		position: absolute;
+		width: 44px;
+		height: 44px;
+		left: 1372px;
+		top: 28px;
+		overflow: visible;
+	}
+	#Background_Search_Shadow_cy {
+		position: absolute;
+		width: 44px;
+		height: 44px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Background_Search_cz {
+		fill: rgba(41,42,44,1);
+		stroke: rgba(156,185,157,1);
+		stroke-width: 6px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Background_Search_cz {
+		overflow: visible;
+		position: absolute;
+		width: 50px;
+		height: 50px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Icon_material-account-circle {
+		fill: rgba(255,255,255,1);
+	}
+	.Icon_material-account-circle {
+		overflow: visible;
+		position: absolute;
+		width: 30px;
+		height: 30px;
+		left: 7px;
+		top: 7px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Component_68__8 {
+		position: absolute;
+		width: 486px;
+		height: 26px;
+		left: 477px;
+		top: 38px;
+		overflow: visible;
+	}
+	#Home_Movies_Series_R_c {
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 57px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Fira Sans;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 21px;
+		color: rgba(255,255,255,0.353);
+	}
+	#Home_Movies_Series_R_da {
+		left: 224px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 61px;
+		white-space: nowrap;
+		--web-animation: fadein undefineds undefined;
+		--web-action-type: page;
+		--web-action-target: series;
+		cursor: pointer;
+		text-align: center;
+		font-family: Fira Sans;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 21px;
+		color: rgba(255,255,255,0.353);
+	}
+	#Home_Movies_Series_R_db {
+		left: 338px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 149px;
+		white-space: nowrap;
+		--web-animation: fadein undefineds undefined;
+		--web-action-type: page;
+		--web-action-target: recentlyadded;
+		cursor: pointer;
+		text-align: center;
+		font-family: Fira Sans;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 21px;
+		color: rgba(255,255,255,0.353);
+	}
+	#Home_Movies_Series_R_dc {
+		left: 107px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 67px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Fira Sans;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 21px;
+		color: rgba(255,255,255,0.353);
+	}
+	#Text_c {
+		position: absolute;
+		width: 300px;
+		height: 405px;
+		left: 24px;
+		top: 231px;
+		overflow: visible;
+	}
+	#Avengers__Endgame_dd {
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 301px;
+		height: 43px;
+		text-align: left;
+		font-family: Fira Sans;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 30px;
+		color: rgba(255,255,255,1);
+	}
+	#Avengers__Endgame_da {
+		left: 0px;
+		top: 117px;
+		position: absolute;
+		overflow: visible;
+		width: 301px;
+		height: 43px;
+		text-align: left;
+		font-family: Fira Sans;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 30px;
+		color: rgba(255,255,255,1);
+	}
+	#Avengers__Endgame_db {
+		left: 0px;
+		top: 234px;
+		position: absolute;
+		overflow: visible;
+		width: 301px;
+		height: 43px;
+		text-align: left;
+		font-family: Fira Sans;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 30px;
+		color: rgba(255,255,255,1);
+	}
+	#Avengers__Endgame_dc {
+		left: 0px;
+		top: 320px;
+		position: absolute;
+		overflow: visible;
+		width: 168px;
+		height: 85px;
+		text-align: left;
+		font-family: Fira Sans;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 30px;
+		color: rgba(255,255,255,1);
+	}
+	#Avengers__Endgame_dd {
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 301px;
+		height: 43px;
+		text-align: left;
+		font-family: Fira Sans;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 30px;
+		color: rgba(255,255,255,1);
+	}
+	#Component_2__1 {
+		position: absolute;
+		width: 546px;
+		height: 505px;
+		left: 199px;
+		top: 231px;
+		overflow: visible;
+	}
+	#Background_Search_Shadow_dd {
+		position: absolute;
+		width: 546px;
+		height: 44px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Background_Search_de {
+		fill: rgba(49,28,105,1);
+		stroke: rgba(255,255,255,1);
+		stroke-width: 6px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Background_Search_de {
+		position: absolute;
+		overflow: visible;
+		width: 552px;
+		height: 50px;
+		left: 0px;
+		top: 0px;
+	}
+	#See_all_df {
+		position: absolute;
+		width: 529px;
+		height: 39px;
+		left: 5px;
+		top: 4px;
+		overflow: visible;
+	}
+	#Scroll_Group_9 {
+		mix-blend-mode: normal;
+		position: absolute;
+		width: 529px;
+		height: 39px;
+		left: 0px;
+		top: 0px;
+		overflow: hidden;
+	}
+	#See_all_dh {
+		left: 7px;
+		top: 9px;
+		position: absolute;
+		overflow: visible;
+		width: 131px;
+		white-space: nowrap;
+		line-height: 18px;
+		margin-top: -1.5px;
+		text-align: left;
+		font-family: Fira Sans;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 15px;
+		color: rgba(255,255,255,1);
+		text-transform: uppercase;
+	}
+	#Background_Search_Shadow_di {
+		position: absolute;
+		width: 546px;
+		height: 44px;
+		left: 0px;
+		top: 116px;
+		overflow: visible;
+	}
+	#Background_Search_dj {
+		fill: rgba(49,28,105,1);
+		stroke: rgba(255,255,255,1);
+		stroke-width: 6px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Background_Search_dj {
+		position: absolute;
+		overflow: visible;
+		width: 552px;
+		height: 50px;
+		left: 0px;
+		top: 0px;
+	}
+	#See_all_dk {
+		position: absolute;
+		width: 96px;
+		height: 18px;
+		left: 12px;
+		top: 13px;
+		overflow: visible;
+	}
+	#See_all_dl {
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 97px;
+		white-space: nowrap;
+		line-height: 18px;
+		margin-top: -1.5px;
+		text-align: right;
+		font-family: Fira Sans;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 15px;
+		color: rgba(255,255,255,1);
+		text-transform: uppercase;
+	}
+	#Background_Search_Shadow_dm {
+		position: absolute;
+		width: 546px;
+		height: 44px;
+		left: 0px;
+		top: 233px;
+		overflow: visible;
+	}
+	#Background_Search_dn {
+		fill: rgba(49,28,105,1);
+		stroke: rgba(255,255,255,1);
+		stroke-width: 6px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Background_Search_dn {
+		position: absolute;
+		overflow: visible;
+		width: 552px;
+		height: 50px;
+		left: 0px;
+		top: 0px;
+	}
+	#See_all_do {
+		position: absolute;
+		width: 131px;
+		height: 18px;
+		left: 12px;
+		top: 13px;
+		overflow: visible;
+	}
+	#See_all_dq {
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 132px;
+		white-space: nowrap;
+		line-height: 18px;
+		margin-top: -1.5px;
+		text-align: right;
+		font-family: Fira Sans;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 15px;
+		color: rgba(255,255,255,1);
+		text-transform: uppercase;
+	}
+	#See_all_dq {
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 132px;
+		white-space: nowrap;
+		line-height: 18px;
+		margin-top: -1.5px;
+		text-align: right;
+		font-family: Fira Sans;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 15px;
+		color: rgba(255,255,255,1);
+		text-transform: uppercase;
+	}
+	#Background_Search_Shadow_dr {
+		position: absolute;
+		width: 546px;
+		height: 44px;
+		left: 0px;
+		top: 349px;
+		overflow: visible;
+	}
+	#Background_Search_ds {
+		fill: rgba(49,28,105,1);
+		stroke: rgba(255,255,255,1);
+		stroke-width: 6px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Background_Search_ds {
+		position: absolute;
+		overflow: visible;
+		width: 552px;
+		height: 50px;
+		left: 0px;
+		top: 0px;
+	}
+	#See_all_dt {
+		position: absolute;
+		width: 131px;
+		height: 18px;
+		left: 12px;
+		top: 13px;
+		overflow: visible;
+	}
+	#See_all_du {
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 132px;
+		white-space: nowrap;
+		line-height: 18px;
+		margin-top: -1.5px;
+		text-align: right;
+		font-family: Fira Sans;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 15px;
+		color: rgba(255,255,255,1);
+		text-transform: uppercase;
+	}
+	#Background_Search_Shadow_dv {
+		position: absolute;
+		width: 250px;
+		height: 66px;
+		left: 101px;
+		top: 439px;
+		overflow: visible;
+	}
+	#Background_Search_dw {
+		fill: rgba(49,28,105,1);
+		stroke: rgba(255,255,255,1);
+		stroke-width: 6px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Background_Search_dw {
+		position: absolute;
+		overflow: visible;
+		width: 256px;
+		height: 72px;
+		left: 0px;
+		top: 0px;
+	}
+	#See_all_dx {
+		position: absolute;
+		width: 110px;
+		height: 36px;
+		left: 70px;
+		top: 15px;
+		overflow: visible;
+	}
+	#See_all_dy {
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 111px;
+		white-space: nowrap;
+		text-align: right;
+		font-family: Fira Sans;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 30px;
+		color: rgba(255,255,255,1);
+		text-transform: uppercase;
+	}
+	#w7tyrm8khve61 {
+		position: absolute;
+		width: 552px;
+		height: 719px;
+		left: 860px;
+		top: 129px;
+		overflow: visible;
+	}
+	#Rectangle_2 {
+		fill: rgba(255,255,255,1);
+		stroke: rgba(112,112,112,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Rectangle_2 {
+		position: absolute;
+		overflow: visible;
+		width: 1px;
+		height: 10px;
+		left: 1272px;
+		top: 712px;
+	}
+	#See_all_d {
+		position: absolute;
+		width: 167px;
+		height: 50px;
+		left: 14px;
+		top: 786px;
+		overflow: visible;
+	}
+	#See_all_ea {
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 168px;
+		white-space: nowrap;
+		--web-animation: fadein undefineds undefined;
+		--web-action-type: page;
+		--web-action-target: login;
+		cursor: pointer;
+		line-height: 18px;
+		margin-top: -1.5px;
+		text-align: right;
+		font-family: Fira Sans;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 15px;
+		color: rgba(255,255,255,1);
+		text-transform: uppercase;
+	}
+	#See_all_eb {
+		left: 0px;
+		top: 32px;
+		position: absolute;
+		overflow: visible;
+		width: 140px;
+		white-space: nowrap;
+		line-height: 18px;
+		margin-top: -1.5px;
+		text-align: right;
+		font-family: Fira Sans;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 15px;
+		color: rgba(255,255,255,1);
+		text-transform: uppercase;
+	}
+
+	.mediaViewInfo {
+		--web-view-name: Add movie screen;
+		--web-view-id: Add_movie_screen;
+		--web-scale-on-resize: true;
+		--web-enable-deep-linking: true;
+	}
+	:root {
+		--web-view-ids: Add_movie_screen;
+	}
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		border: none;
+	}
+	#Add_movie_screen {
+		position: absolute;
+		width: 1440px;
+		height: 880px;
+		background-color: rgba(148,183,156,1);
+		overflow: hidden;
+		--web-view-name: Add movie screen;
+		--web-view-id: Add_movie_screen;
+		--web-scale-on-resize: true;
+		--web-enable-deep-linking: true;
 	}
 	#Background {
 		fill: rgba(156,185,157,1);
@@ -101,7 +1395,7 @@
 		left: 0px;
 		top: 0px;
 	}
-	#Search {
+	#Search_x {
 		position: absolute;
 		width: 44px;
 		height: 44px;
@@ -109,7 +1403,101 @@
 		top: 28px;
 		overflow: visible;
 	}
-	#Component_1__16 {
+	#Background_Search_Shadow_y {
+		position: absolute;
+		width: 44px;
+		height: 44px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Background_Search {
+		fill: rgba(41,42,44,1);
+	}
+	.Background_Search {
+		position: absolute;
+		overflow: visible;
+		width: 44px;
+		height: 44px;
+		left: 0px;
+		top: 0px;
+	}
+	#Icon_Search_ {
+		position: absolute;
+		width: 18px;
+		height: 18px;
+		left: 13px;
+		top: 13px;
+		overflow: visible;
+	}
+	#Shape_ {
+		fill: rgba(255,255,255,1);
+	}
+	.Shape_ {
+		filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.204));
+		overflow: visible;
+		position: absolute;
+		width: 30px;
+		height: 30px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Search_x {
+		position: absolute;
+		width: 44px;
+		height: 44px;
+		left: 1321px;
+		top: 28px;
+		overflow: visible;
+	}
+	#Background_Search_Shadow_y {
+		position: absolute;
+		width: 44px;
+		height: 44px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Background_Search_z {
+		fill: rgba(41,42,44,1);
+		stroke: rgba(156,185,157,1);
+		stroke-width: 6px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Background_Search_z {
+		position: absolute;
+		overflow: visible;
+		width: 50px;
+		height: 50px;
+		left: 0px;
+		top: 0px;
+	}
+	#Icon_Search_ {
+		position: absolute;
+		width: 18px;
+		height: 18px;
+		left: 13px;
+		top: 13px;
+		overflow: visible;
+	}
+	#Shape_ {
+		fill: rgba(255,255,255,1);
+	}
+	.Shape_ {
+		filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.204));
+		overflow: visible;
+		position: absolute;
+		width: 30px;
+		height: 30px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Component_1__18 {
 		position: absolute;
 		width: 44px;
 		height: 44px;
@@ -118,10 +1506,48 @@
 		overflow: visible;
 		--web-animation: fadein undefineds undefined;
 		--web-action-type: page;
-		--web-action-target: Sign_up_screen.html;
+		--web-action-target: signup;
 		cursor: pointer;
 	}
-	#Component_68__21 {
+	#Background_Search_Shadow_ {
+		position: absolute;
+		width: 44px;
+		height: 44px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Background_Search_ {
+		fill: rgba(41,42,44,1);
+		stroke: rgba(156,185,157,1);
+		stroke-width: 6px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Background_Search_ {
+		overflow: visible;
+		position: absolute;
+		width: 50px;
+		height: 50px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Icon_material-account-circle {
+		fill: rgba(255,255,255,1);
+	}
+	.Icon_material-account-circle {
+		overflow: visible;
+		position: absolute;
+		width: 30px;
+		height: 30px;
+		left: 7px;
+		top: 7px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Component_68__23 {
 		position: absolute;
 		width: 486px;
 		height: 26px;
@@ -143,7 +1569,7 @@
 		font-size: 21px;
 		color: rgba(255,255,255,0.353);
 	}
-	#Home_Movies_Series_R_w {
+	#Home_Movies_Series_R_ {
 		left: 224px;
 		top: 0px;
 		position: absolute;
@@ -152,7 +1578,7 @@
 		white-space: nowrap;
 		--web-animation: fadein undefineds undefined;
 		--web-action-type: page;
-		--web-action-target: Series_screen.html;
+		--web-action-target: series;
 		cursor: pointer;
 		text-align: center;
 		font-family: Fira Sans;
@@ -161,44 +1587,16 @@
 		font-size: 21px;
 		color: rgba(255,255,255,0.353);
 	}
-	#Home_Movies_Series_R_x {
+	#Home_Movies_Series_R_ba {
 		left: 338px;
 		top: 0px;
 		position: absolute;
 		overflow: visible;
 		width: 149px;
 		white-space: nowrap;
-		text-align: center;
-		font-family: Fira Sans;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 21px;
-		color: rgba(255,255,255,1);
-	}
-	#Home_Movies_Series_R_y {
-		left: 224px;
-		top: 0px;
-		position: absolute;
-		overflow: visible;
-		width: 61px;
-		white-space: nowrap;
-		text-align: center;
-		font-family: Fira Sans;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 21px;
-		color: rgba(121,108,158,1);
-	}
-	#Home_Movies_Series_R_z {
-		left: 109px;
-		top: 0px;
-		position: absolute;
-		overflow: visible;
-		width: 67px;
-		white-space: nowrap;
 		--web-animation: fadein undefineds undefined;
 		--web-action-type: page;
-		--web-action-target: moviescreen.html;
+		--web-action-target: recentlyadded;
 		cursor: pointer;
 		text-align: center;
 		font-family: Fira Sans;
@@ -207,230 +1605,43 @@
 		font-size: 21px;
 		color: rgba(255,255,255,0.353);
 	}
-	#Popular {
-		position: absolute;
-		width: 1290px;
-		height: 367px;
-		left: 75px;
-		top: 669px;
-		overflow: visible;
-	}
-	#Movies {
-		position: absolute;
-		width: 1290px;
-		height: 313px;
-		left: 0px;
-		top: 54px;
-		overflow: visible;
-	}
-	#Movie_2 {
-		filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.098));
-		position: absolute;
-		width: 307.5px;
-		height: 313px;
-		left: 327.5px;
-		top: 0px;
-		overflow: visible;
-	}
-	#Movie_1 {
-		filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.098));
-		position: absolute;
-		width: 307.5px;
-		height: 313px;
-		left: 0px;
-		top: 0px;
-		overflow: visible;
-		--web-animation: fadein 0.3s ease-out;
-		--web-action-type: page;
-		--web-action-target: Play_movie_screen.html;
-		cursor: pointer;
-	}
-	#Movie_2_ {
-		filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.098));
-		position: absolute;
-		width: 307.5px;
-		height: 313px;
-		left: 655px;
-		top: 0px;
-		overflow: visible;
-	}
-	#Movie_2_ba {
-		filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.098));
-		position: absolute;
-		width: 307.5px;
-		height: 313px;
-		left: 982.5px;
-		top: 0px;
-		overflow: visible;
-	}
-	#Title {
-		position: absolute;
-		width: 1289px;
-		height: 24px;
-		left: 0px;
-		top: 0px;
-		overflow: visible;
-	}
-	#See_all {
-		position: absolute;
-		width: 66px;
-		height: 18px;
-		left: 1223px;
-		top: 4px;
-		overflow: visible;
-	}
-	#Icon {
-		position: absolute;
-		width: 6px;
-		height: 9px;
-		left: 60px;
-		top: 1px;
-		overflow: visible;
-	}
-	#Arrow {
-		fill: rgba(255,255,255,1);
-	}
-	.Arrow {
-		filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.204));
-		overflow: visible;
-		position: absolute;
-		width: 18px;
-		height: 21px;
-		left: 0px;
-		top: 0px;
-		transform: matrix(1,0,0,1,0,0);
-	}
-	#See_all_ba {
-		left: 0px;
+	#Home_Movies_Series_R_bb {
+		left: 107px;
 		top: 0px;
 		position: absolute;
 		overflow: visible;
-		width: 53px;
+		width: 67px;
 		white-space: nowrap;
-		line-height: 18px;
-		margin-top: -1.5px;
-		text-align: right;
+		text-align: center;
 		font-family: Fira Sans;
 		font-style: normal;
 		font-weight: normal;
-		font-size: 15px;
-		color: rgba(255,255,255,1);
-		text-transform: uppercase;
-	}
-	#Popular_right_now {
-		left: 0px;
-		top: 0px;
-		position: absolute;
-		overflow: visible;
-		width: 194px;
-		white-space: nowrap;
-		text-align: left;
-		font-family: Fira Sans;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 20px;
-		color: rgba(255,255,255,1);
-		text-transform: uppercase;
-	}
-	#Banners {
-		position: absolute;
-		width: 3040px;
-		height: 385px;
-		left: -800px;
-		top: 145px;
-		overflow: visible;
-	}
-	#Movies_bd {
-		position: absolute;
-		width: 3040px;
-		height: 385px;
-		left: 0px;
-		top: 0px;
-		overflow: visible;
-	}
-	#Movie_Left {
-		position: absolute;
-		width: 1000px;
-		height: 385px;
-		left: 0px;
-		top: 0px;
-		overflow: visible;
-	}
-	#Background_Movie_Left {
-		fill: rgba(44,25,94,1);
-	}
-	.Background_Movie_Left {
-		position: absolute;
-		overflow: visible;
-		width: 1000px;
-		height: 385px;
-		left: 0px;
-		top: 0px;
-	}
-	#Filter_Movie_Left_bh {
-		fill: url(#Filter_Movie_Left_bh);
-	}
-	.Filter_Movie_Left_bh {
-		position: absolute;
-		overflow: visible;
-		width: 200px;
-		height: 385px;
-		left: 800px;
-		top: 0px;
-	}
-	#Movie_Center {
-		position: absolute;
-		width: 1000px;
-		height: 385px;
-		left: 1020px;
-		top: 0px;
-		overflow: visible;
-	}
-	#Background_Movie_Center {
-		position: absolute;
-		width: 1000px;
-		height: 385px;
-		left: 0px;
-		top: 0px;
-		overflow: visible;
-	}
-	#Filter_Movie_Center_bl {
-		fill: url(#Filter_Movie_Center_bl);
-	}
-	.Filter_Movie_Center_bl {
-		position: absolute;
-		overflow: visible;
-		width: 1000px;
-		height: 193px;
-		left: 0px;
-		top: 192px;
+		font-size: 21px;
+		color: rgba(255,255,255,0.353);
 	}
 	#Text {
 		position: absolute;
 		width: 300px;
-		height: 94px;
-		left: 670px;
-		top: 262px;
+		height: 142px;
+		left: 7px;
+		top: 143px;
 		overflow: visible;
 	}
-	#After_the_devastatin {
-		opacity: 0.798;
+	#Avengers__Endgame {
 		left: 0px;
-		top: 54px;
+		top: 99px;
 		position: absolute;
-		overflow: hidden;
+		overflow: visible;
 		width: 301px;
-		height: 40px;
-		line-height: 20px;
-		margin-top: -2.5px;
+		height: 43px;
 		text-align: left;
 		font-family: Fira Sans;
 		font-style: normal;
 		font-weight: normal;
-		font-size: 15px;
+		font-size: 30px;
 		color: rgba(255,255,255,1);
 	}
-	#Avengers__Endgame {
+	#Avengers__Endgame_bd {
 		left: 0px;
 		top: 0px;
 		position: absolute;
@@ -444,92 +1655,544 @@
 		font-size: 30px;
 		color: rgba(255,255,255,1);
 	}
-	#Movie_Right {
+	#Component_32__2 {
 		position: absolute;
-		width: 1000px;
-		height: 385px;
-		left: 2040px;
+		width: 546px;
+		height: 144px;
+		left: 265px;
+		top: 144px;
+		overflow: visible;
+	}
+	#Background_Search_Shadow_bf {
+		position: absolute;
+		width: 546px;
+		height: 44px;
+		left: 0px;
 		top: 0px;
 		overflow: visible;
 	}
-	#Background_Movie_Righ {
-		fill: rgba(44,25,94,1);
+	#Background_Search_bg {
+		fill: rgba(49,28,105,1);
+		stroke: rgba(255,255,255,1);
+		stroke-width: 6px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
 	}
-	.Background_Movie_Righ {
+	.Background_Search_bg {
 		position: absolute;
 		overflow: visible;
-		width: 1000px;
-		height: 385px;
+		width: 552px;
+		height: 50px;
 		left: 0px;
 		top: 0px;
 	}
-	#Filter_Movie_Right {
-		fill: rgba(44,25,94,1);
+	#See_all {
+		position: absolute;
+		width: 83px;
+		height: 18px;
+		left: 11px;
+		top: 13px;
+		overflow: visible;
 	}
-	.Filter_Movie_Right {
+	#See_all_bi {
+		left: 0px;
+		top: 0px;
 		position: absolute;
 		overflow: visible;
-		width: 200px;
-		height: 385px;
+		width: 84px;
+		white-space: nowrap;
+		line-height: 18px;
+		margin-top: -1.5px;
+		text-align: right;
+		font-family: Fira Sans;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 15px;
+		color: rgba(255,255,255,1);
+		text-transform: uppercase;
+	}
+	#Background_Search_Shadow_bj {
+		position: absolute;
+		width: 546px;
+		height: 44px;
+		left: 0px;
+		top: 100px;
+		overflow: visible;
+	}
+	#Component_31__1 {
+		position: absolute;
+		width: 546px;
+		height: 44px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Background_Search_bl {
+		fill: rgba(49,28,105,1);
+		stroke: rgba(255,255,255,1);
+		stroke-width: 6px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Background_Search_bl {
+		position: absolute;
+		overflow: visible;
+		width: 552px;
+		height: 50px;
 		left: 0px;
 		top: 0px;
 	}
-	#Navigation {
+	#See_all_bm {
 		position: absolute;
-		width: 37px;
-		height: 15px;
-		left: 2183px;
-		top: 350px;
+		width: 136px;
+		height: 18px;
+		left: 8px;
+		top: 14px;
 		overflow: visible;
 	}
-	#Right_Navigation {
-		opacity: 0.6;
-		position: absolute;
-		width: 10px;
-		height: 15px;
-		left: 27px;
+	#See_all_bn {
+		left: 0px;
 		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 137px;
+		white-space: nowrap;
+		line-height: 18px;
+		margin-top: -1.5px;
+		text-align: right;
+		font-family: Fira Sans;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 15px;
+		color: rgba(255,255,255,1);
+		text-transform: uppercase;
+	}
+	#Background_Search_Shadow_bo {
+		position: absolute;
+		width: 250px;
+		height: 66px;
+		left: 300px;
+		top: 670px;
 		overflow: visible;
 	}
-	#Arrow_Right {
+	#Background_Search_bp {
+		fill: rgba(49,28,105,1);
+		stroke: rgba(255,255,255,1);
+		stroke-width: 6px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Background_Search_bp {
+		position: absolute;
+		overflow: visible;
+		width: 256px;
+		height: 72px;
+		left: 0px;
+		top: 0px;
+	}
+	#See_all_bq {
+		position: absolute;
+		width: 90px;
+		height: 36px;
+		left: 80px;
+		top: 15px;
+		overflow: visible;
+	}
+	#See_all_br {
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 91px;
+		white-space: nowrap;
+		text-align: right;
+		font-family: Fira Sans;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 30px;
+		color: rgba(255,255,255,1);
+		text-transform: uppercase;
+	}
+	#w7tyrm8khve61 {
+		position: absolute;
+		width: 552px;
+		height: 719px;
+		left: 860px;
+		top: 129px;
+		overflow: visible;
+	}
+	#Rectangle_2 {
 		fill: rgba(255,255,255,1);
+		stroke: rgba(112,112,112,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
 	}
-	.Arrow_Right {
-		filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.204));
-		overflow: visible;
+	.Rectangle_2 {
 		position: absolute;
-		width: 22px;
-		height: 27px;
+		overflow: visible;
+		width: 1px;
+		height: 10px;
+		left: 1272px;
+		top: 712px;
+	}
+	#See_all_bu {
+		position: absolute;
+		width: 145px;
+		height: 42px;
+		left: 14px;
+		top: 794px;
+		overflow: visible;
+	}
+	#See_all_bv {
 		left: 0px;
 		top: 0px;
-		transform: matrix(1,0,0,1,0,0);
-	}
-	#Left_Navigation {
-		opacity: 0.6;
-		transform: translate(0px, 0px) matrix(1,0,0,1,0,0) rotate(180deg);
-		transform-origin: center;
 		position: absolute;
-		width: 10px;
-		height: 15px;
+		overflow: visible;
+		width: 146px;
+		white-space: nowrap;
+		line-height: 18px;
+		margin-top: -1.5px;
+		text-align: right;
+		font-family: Fira Sans;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 15px;
+		color: rgba(255,255,255,1);
+		text-transform: uppercase;
+	}
+	#See_all_bw {
+		left: 0px;
+		top: 24px;
+		position: absolute;
+		overflow: visible;
+		width: 140px;
+		white-space: nowrap;
+		line-height: 18px;
+		margin-top: -1.5px;
+		text-align: right;
+		font-family: Fira Sans;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 15px;
+		color: rgba(255,255,255,1);
+		text-transform: uppercase;
+	}
+	#Text_bx {
+		position: absolute;
+		width: 300px;
+		height: 141px;
+		left: 7px;
+		top: 328px;
+		overflow: visible;
+	}
+	#Avengers__Endgame_by {
+		left: 0px;
+		top: 98px;
+		position: absolute;
+		overflow: visible;
+		width: 301px;
+		height: 43px;
+		text-align: left;
+		font-family: Fira Sans;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 30px;
+		color: rgba(255,255,255,1);
+	}
+	#Avengers__Endgame_bz {
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 301px;
+		height: 43px;
+		text-align: left;
+		font-family: Fira Sans;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 30px;
+		color: rgba(255,255,255,1);
+	}
+	#Component_32__4 {
+		position: absolute;
+		width: 546px;
+		height: 144px;
+		left: 265px;
+		top: 328px;
+		overflow: visible;
+	}
+	#Background_Search_Shadow_b {
+		position: absolute;
+		width: 546px;
+		height: 44px;
 		left: 0px;
 		top: 0px;
 		overflow: visible;
 	}
-	#Arrow_Left {
-		fill: rgba(255,255,255,1);
+	#Background_Search_b {
+		fill: rgba(49,28,105,1);
+		stroke: rgba(255,255,255,1);
+		stroke-width: 6px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
 	}
-	.Arrow_Left {
-		filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.204));
-		overflow: visible;
+	.Background_Search_b {
 		position: absolute;
-		width: 10px;
-		height: 15px;
-		transform: translate(10px, 0px) matrix(1,0,0,1,0,-15) rotate(180deg);
-		transform-origin: center;
+		overflow: visible;
+		width: 552px;
+		height: 50px;
 		left: 0px;
 		top: 0px;
 	}
-</style>
+	#See_all_b {
+		position: absolute;
+		width: 131px;
+		height: 18px;
+		left: 11px;
+		top: 13px;
+		overflow: visible;
+	}
+	#See_all_ca {
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 132px;
+		white-space: nowrap;
+		line-height: 18px;
+		margin-top: -1.5px;
+		text-align: right;
+		font-family: Fira Sans;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 15px;
+		color: rgba(255,255,255,1);
+		text-transform: uppercase;
+	}
+	#Background_Search_Shadow_ca {
+		position: absolute;
+		width: 546px;
+		height: 44px;
+		left: 0px;
+		top: 100px;
+		overflow: visible;
+	}
+	#Component_31__1_b {
+		position: absolute;
+		width: 546px;
+		height: 44px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Background_Search_ca {
+		fill: rgba(49,28,105,1);
+		stroke: rgba(255,255,255,1);
+		stroke-width: 6px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Background_Search_ca {
+		position: absolute;
+		overflow: visible;
+		width: 552px;
+		height: 50px;
+		left: 0px;
+		top: 0px;
+	}
+	#See_all_cb {
+		position: absolute;
+		width: 157px;
+		height: 18px;
+		left: 12px;
+		top: 12px;
+		overflow: visible;
+	}
+	#See_all_cc {
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 158px;
+		white-space: nowrap;
+		line-height: 18px;
+		margin-top: -1.5px;
+		text-align: right;
+		font-family: Fira Sans;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 15px;
+		color: rgba(255,255,255,1);
+		text-transform: uppercase;
+	}
+	#Text_ca {
+		position: absolute;
+		width: 300px;
+		height: 142px;
+		left: 10px;
+		top: 512px;
+		overflow: visible;
+	}
+	#Avengers__Endgame_cb {
+		left: 0px;
+		top: 99px;
+		position: absolute;
+		overflow: visible;
+		width: 301px;
+		height: 43px;
+		text-align: left;
+		font-family: Fira Sans;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 30px;
+		color: rgba(255,255,255,1);
+	}
+	#Avengers__Endgame_cc {
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 301px;
+		height: 43px;
+		text-align: left;
+		font-family: Fira Sans;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 30px;
+		color: rgba(255,255,255,1);
+	}
+	#Component_32__5 {
+		position: absolute;
+		width: 546px;
+		height: 144px;
+		left: 258px;
+		top: 512px;
+		overflow: visible;
+	}
+	#Background_Search_Shadow_ce {
+		position: absolute;
+		width: 546px;
+		height: 44px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Background_Search_cf {
+		fill: rgba(49,28,105,1);
+		stroke: rgba(255,255,255,1);
+		stroke-width: 6px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Background_Search_cf {
+		position: absolute;
+		overflow: visible;
+		width: 552px;
+		height: 50px;
+		left: 0px;
+		top: 0px;
+	}
+	#See_all_cg {
+		position: absolute;
+		width: 116px;
+		height: 18px;
+		left: 26px;
+		top: 13px;
+		overflow: visible;
+	}
+	#See_all_ch {
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 117px;
+		white-space: nowrap;
+		line-height: 18px;
+		margin-top: -1.5px;
+		text-align: right;
+		font-family: Fira Sans;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 15px;
+		color: rgba(255,255,255,1);
+		text-transform: uppercase;
+	}
+	#Background_Search_Shadow_ci {
+		position: absolute;
+		width: 546px;
+		height: 44px;
+		left: 0px;
+		top: 100px;
+		overflow: visible;
+	}
+	#Component_31__1_cj {
+		position: absolute;
+		width: 546px;
+		height: 44px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Background_Search_ck {
+		fill: rgba(49,28,105,1);
+		stroke: rgba(255,255,255,1);
+		stroke-width: 6px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Background_Search_ck {
+		position: absolute;
+		overflow: visible;
+		width: 552px;
+		height: 50px;
+		left: 0px;
+		top: 0px;
+	}
+	#See_all_cl {
+		position: absolute;
+		width: 81px;
+		height: 18px;
+		left: 25px;
+		top: 13px;
+		overflow: visible;
+	}
+	#See_all_cm {
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 82px;
+		white-space: nowrap;
+		line-height: 18px;
+		margin-top: -1.5px;
+		text-align: right;
+		font-family: Fira Sans;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 15px;
+		color: rgba(255,255,255,1);
+		text-transform: uppercase;
+	}
+</style>   
+<title>Add movie screen</title>
+
 <script id="applicationScript">
 ///////////////////////////////////////
 // INITIALIZATION
@@ -3370,7 +5033,7 @@ window.application = new Application();
 </script>
 </head>
 <body>
-<div id="Recently_added_screen">
+<div id="Add_movie_screen">
 	<svg class="Background">
 		<rect id="Background" rx="0" ry="0" x="0" y="0" width="1440" height="880">
 		</rect>
@@ -3383,116 +5046,156 @@ window.application = new Application();
 					</rect>
 				</svg>
 			</div>
-			<img id="Search" src="Search.png" srcset="Search.png 1x, Search@2x.png 2x">
+			
 				
-			<img onclick="application.goToTargetView(event)" id="Component_1__16" src="Component_1__16.png" srcset="Component_1__16.png 1x, Component_1__16@2x.png 2x">
+			<div onclick="application.goToTargetView(event)" id="Component_1__18" class="Component_1___18">
 				
-			<div id="Component_68__21" class="Component_68___21">
+						</div>
+			<div id="Component_68__23" class="Component_68___23">
 				<div id="Home_Movies_Series_R">
 					<span>Home</span>
 				</div>
-				<div onclick="application.goToTargetView(event)" id="Home_Movies_Series_R_w">
+				<div onclick="application.goToTargetView(event)" id="Home_Movies_Series_R_">
 					<span></span><span style="color:rgba(255,255,255,0.345);">Series</span>
 				</div>
-				<div id="Home_Movies_Series_R_x">
-					<span>Recently added</span>
+				<div onclick="application.goToTargetView(event)" id="Home_Movies_Series_R_ba">
+					<span></span><span style="color:rgba(255,255,255,0.345);">Recently added</span>
 				</div>
-				<div id="Home_Movies_Series_R_y">
-					<span>Series</span>
-				</div>
-				<div onclick="application.goToTargetView(event)" id="Home_Movies_Series_R_z">
-					<span>Movies</span>
+				<div id="Home_Movies_Series_R_bb">
+					<span></span><span style="color:rgba(255,255,255,0.345);">Movies</span>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div id="Popular">
-		<div id="Movies">
-			<img id="Movie_2" src="Movie_2.png" srcset="Movie_2.png 1x, Movie_2@2x.png 2x">
-				
-			<img onclick="application.goToTargetView(event)" id="Movie_1" src="Movie_1.png" srcset="Movie_1.png 1x, Movie_1@2x.png 2x">
-				
-			<img id="Movie_2_" src="Movie_2_.png" srcset="Movie_2_.png 1x, Movie_2_@2x.png 2x">
-				
-			<img id="Movie_2_ba" src="Movie_2_ba.png" srcset="Movie_2_ba.png 1x, Movie_2_ba@2x.png 2x">
-				
+	<div id="Text">
+		<div id="Avengers__Endgame">
+			<span>DESCRIPTION:</span>
 		</div>
-		<div id="Title">
+		<div id="Avengers__Endgame_bd">
+			<span>TITLE:</span>
+		</div>
+	</div>
+	<div id="Component_32__2" class="Component_32___2">
+		<div id="Background_Search_Shadow_bf">
+			<svg class="Background_Search_bg">
+				<rect id="Background_Search_bg" rx="6" ry="6" x="0" y="0" width="546" height="44">
+				</rect>
+			</svg>
 			<div id="See_all">
-				<div id="Icon">
-					<svg class="Arrow" viewBox="0 0 6 9">
-						<path id="Arrow" d="M 5.840861797332764 4.849757671356201 L 1.440792918205261 8.855118751525879 C 1.228582382202148 9.048294067382813 0.8845354914665222 9.048294067382813 0.6723476052284241 8.855118751525879 L 0.159152626991272 8.387957572937012 C -0.05269566550850868 8.195112228393555 -0.05310319736599922 7.882565021514893 0.1582470089197159 7.689266204833984 L 3.645378112792969 4.49998950958252 L 0.1582470089197159 1.310733795166016 C -0.05310319736599922 1.117434978485107 -0.05269566550850868 0.8048880696296692 0.159152626991272 0.6120426058769226 L 0.6723476052284241 0.144881397485733 C 0.8845581412315369 -0.04829379916191101 1.228605031967163 -0.04829379916191101 1.440792918205261 0.144881397485733 L 5.840839385986328 4.150242328643799 C 6.05305004119873 4.343396663665771 6.05305004119873 4.656582355499268 5.840861797332764 4.849757671356201 Z">
-						</path>
-					</svg>
-				</div>
-				<div id="See_all_ba">
-					<span>See all</span>
+				<div id="See_all_bi">
+					<input name="title" type="text" placeholder="enter title">
+				
 				</div>
 			</div>
-			<div id="Popular_right_now">
-				<span>Popular right now</span>
+		</div>
+		<div id="Background_Search_Shadow_bj">
+			<div id="Component_31__1" class="Component_31___1">
+				<svg class="Background_Search_bl">
+					<rect id="Background_Search_bl" rx="6" ry="6" x="0" y="0" width="546" height="44">
+					</rect>
+				</svg>
+				<div id="See_all_bm">
+					<div id="See_all_bn">
+						<input name="description" type="text" placeholder="enter description">
+				
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
-	<div id="Banners">
-		<div id="Movies_bd">
-			<div id="Movie_Left">
-				<svg class="Background_Movie_Left">
-					<rect id="Background_Movie_Left" rx="8" ry="8" x="0" y="0" width="1000" height="385">
-					</rect>
-				</svg>
-				<svg class="Filter_Movie_Left_bh">
-					<linearGradient id="Filter_Movie_Left_bh" spreadMethod="pad" x1="1" x2="0" y1="0.5" y2="0.5">
-						<stop offset="0" stop-color="#151519" stop-opacity="0"></stop>
-						<stop offset="1" stop-color="#151519" stop-opacity="0.298"></stop>
-					</linearGradient>
-					<rect id="Filter_Movie_Left_bh" rx="0" ry="0" x="0" y="0" width="200" height="385">
-					</rect>
-				</svg>
+	<div id="Background_Search_Shadow_bo" class="Background_Search_Shadow">
+		<svg class="Background_Search_bp">
+			<rect id="Background_Search_bp" rx="33" ry="33" x="0" y="0" width="250" height="66">
+			</rect>
+		</svg>
+		<div id="See_all_bq">
+			<div id="See_all_br">
+				<span>LOG IN</span>
 			</div>
-			<div id="Movie_Center" class="Movie_Center">
-				<img id="Background_Movie_Center" src="Background_Movie_Center.png" srcset="Background_Movie_Center.png 1x, Background_Movie_Center@2x.png 2x">
-					
-				<svg class="Filter_Movie_Center_bl">
-					<linearGradient id="Filter_Movie_Center_bl" spreadMethod="pad" x1="0.5" x2="0.5" y1="0" y2="1">
-						<stop offset="0" stop-color="#151419" stop-opacity="0"></stop>
-						<stop offset="1" stop-color="#151419" stop-opacity="0.553"></stop>
-					</linearGradient>
-					<rect id="Filter_Movie_Center_bl" rx="0" ry="0" x="0" y="0" width="1000" height="193">
+		</div>
+	</div>
+	<img id="w7tyrm8khve61" src="public/img/w7tyrm8khve61.png" srcset="public/img/w7tyrm8khve61.png 1x, public/img/w7tyrm8khve61@2x.png 2x">
+		
+	<svg class="Rectangle_2">
+		<rect id="Rectangle_2" rx="0" ry="0" x="0" y="0" width="1" height="10">
+		</rect>
+	</svg>
+	<div id="See_all_bu">
+		<div id="See_all_bv">
+			<span>NOT a user? sign up</span>
+		</div>
+		<div id="See_all_bw">
+			<span>Forgot password?</span>
+		</div>
+	</div>
+	<div id="Text_bx">
+		<div id="Avengers__Endgame_by">
+			<span>LINK TO COVER:</span>
+		</div>
+		<div id="Avengers__Endgame_bz">
+			<span>LINK TO FILE:</span>
+		</div>
+	</div>
+	<div id="Component_32__4" class="Component_32___4">
+		<div id="Background_Search_Shadow_b">
+			<svg class="Background_Search_b">
+				<rect id="Background_Search_b" rx="6" ry="6" x="0" y="0" width="546" height="44">
+				</rect>
+			</svg>
+			<div id="See_all_b">
+				<div id="See_all_ca">
+					<input name="file_link" type="url" placeholder="enter link to file">
+				
+				</div>
+			</div>
+		</div>
+		<div id="Background_Search_Shadow_ca">
+			<div id="Component_31__1_b" class="Component_31___1">
+				<svg class="Background_Search_ca">
+					<rect id="Background_Search_ca" rx="6" ry="6" x="0" y="0" width="546" height="44">
 					</rect>
 				</svg>
-				<div id="Text">
-					<div id="After_the_devastatin">
-						<span>Blends the style of classic sitcoms with the MCU, in which Wanda Maximoff and Vision - two super-powered beings living their ideal suburban lives - begin to suspect that everything is not as it seems.</span>
-					</div>
-					<div id="Avengers__Endgame">
-						<span>WandaVision</span>
+				<div id="See_all_cb">
+					<div id="See_all_cc">
+						<input name="cover_link" type="url" placeholder="enter link to cover">
+				
 					</div>
 				</div>
 			</div>
-			<div id="Movie_Right">
-				<svg class="Background_Movie_Righ">
-					<rect id="Background_Movie_Righ" rx="8" ry="8" x="0" y="0" width="1000" height="385">
-					</rect>
-				</svg>
-				<svg class="Filter_Movie_Right">
-					<rect id="Filter_Movie_Right" rx="0" ry="0" x="0" y="0" width="200" height="385">
-					</rect>
-				</svg>
+		</div>
+	</div>
+	<div id="Text_ca">
+		<div id="Avengers__Endgame_cb">
+			<span>YEAR:</span>
+		</div>
+		<div id="Avengers__Endgame_cc">
+			<span>CATEGORY:</span>
+		</div>
+	</div>
+	<div id="Component_32__5" class="Component_32___5">
+		<div id="Background_Search_Shadow_ce">
+			<svg class="Background_Search_cf">
+				<rect id="Background_Search_cf" rx="6" ry="6" x="0" y="0" width="546" height="44">
+				</rect>
+			</svg>
+			<div id="See_all_cg">
+				<div id="See_all_ch">
+					<input name="category" type="text" placeholder="enter category">
+				
+				</div>
 			</div>
 		</div>
-		<div id="Navigation">
-			<div id="Right_Navigation">
-				<svg class="Arrow_Right" viewBox="0 0 10 15">
-					<path id="Arrow_Right" d="M 9.734769821166992 8.082929611206055 L 2.401321649551392 14.75853061676025 C 2.047637224197388 15.08049011230469 1.474225878715515 15.08049011230469 1.120579361915588 14.75853061676025 L 0.2652543783187866 13.97992897033691 C -0.08782611042261124 13.65851974487305 -0.0885053277015686 13.13760852813721 0.2637450098991394 12.81544399261475 L 6.075630187988281 7.499982833862305 L 0.2637450098991394 2.184556245803833 C -0.0885053277015686 1.862391591072083 -0.08782611042261124 1.341480135917664 0.2652543783187866 1.020071029663086 L 1.120579361915588 0.2414689958095551 C 1.474263548851013 -0.08048966526985168 2.047675132751465 -0.08048966526985168 2.401321649551392 0.2414689958095551 L 9.734731674194336 6.917070388793945 C 10.08841609954834 7.238994598388672 10.08841609954834 7.760971069335938 9.734769821166992 8.082929611206055 Z">
-					</path>
+		<div id="Background_Search_Shadow_ci">
+			<div id="Component_31__1_cj" class="Component_31___1">
+				<svg class="Background_Search_ck">
+					<rect id="Background_Search_ck" rx="6" ry="6" x="0" y="0" width="546" height="44">
+					</rect>
 				</svg>
-			</div>
-			<div id="Left_Navigation">
-				<svg class="Arrow_Left" viewBox="-10 0 10 15">
-					<path id="Arrow_Left" d="M -9.734769821166992 8.082929611206055 L -2.401321649551392 14.75853061676025 C -2.047637224197388 15.08049011230469 -1.474225878715515 15.08049011230469 -1.120579361915588 14.75853061676025 L -0.2652543783187866 13.97992897033691 C 0.08782611042261124 13.65851974487305 0.0885053277015686 13.13760852813721 -0.2637450098991394 12.81544399261475 L -6.075630187988281 7.499982833862305 L -0.2637450098991394 2.184556245803833 C 0.0885053277015686 1.862391591072083 0.08782611042261124 1.341480135917664 -0.2652543783187866 1.020071029663086 L -1.120579361915588 0.2414689958095551 C -1.474263548851013 -0.08048966526985168 -2.047675132751465 -0.08048966526985168 -2.401321649551392 0.2414689958095551 L -9.734731674194336 6.917070388793945 C -10.08841609954834 7.238994598388672 -10.08841609954834 7.760971069335938 -9.734769821166992 8.082929611206055 Z">
-					</path>
-				</svg>
+				<div id="See_all_cl">
+					<div id="See_all_cm">
+						<span>ENTER YEAR</span>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>

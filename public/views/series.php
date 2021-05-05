@@ -118,7 +118,7 @@
 		overflow: visible;
 		--web-animation: fadein undefineds undefined;
 		--web-action-type: page;
-		--web-action-target: Sign_up_screen.html;
+		--web-action-target: signup;
 		cursor: pointer;
 	}
 	#Component_68__20 {
@@ -166,7 +166,7 @@
 		white-space: nowrap;
 		--web-animation: fadein undefineds undefined;
 		--web-action-type: page;
-		--web-action-target: Recently_added_screen.html;
+		--web-action-target: recentlyadded;
 		cursor: pointer;
 		text-align: center;
 		font-family: Fira Sans;
@@ -198,7 +198,7 @@
 		white-space: nowrap;
 		--web-animation: fadein undefineds undefined;
 		--web-action-type: page;
-		--web-action-target: moviescreen.html;
+		--web-action-target: ;
 		cursor: pointer;
 		text-align: center;
 		font-family: Fira Sans;
@@ -242,7 +242,7 @@
 		overflow: visible;
 		--web-animation: fadein 0.3s ease-out;
 		--web-action-type: page;
-		--web-action-target: Play_movie_screen.html;
+		--web-action-target: playmovie;
 		cursor: pointer;
 	}
 	#Title {
@@ -3365,9 +3365,9 @@ window.application = new Application();
 					</rect>
 				</svg>
 			</div>
-			<img id="Search" src="Search.png" srcset="Search.png 1x, Search@2x.png 2x">
+			<img id="Search" src="public/img/Search.png" srcset="public/img/Search.png 1x, public/img/Search@2x.png 2x">
 				
-			<img onclick="application.goToTargetView(event)" id="Component_1__15" src="Component_1__15.png" srcset="Component_1__15.png 1x, Component_1__15@2x.png 2x">
+			<img onclick="application.goToTargetView(event)" id="Component_1__15" src="public/img/Component_1__15.png" srcset="public/img/Component_1__15.png 1x, public/img/Component_1__15@2x.png 2x">
 				
 			<div id="Component_68__20" class="Component_68___20">
 				<div id="Home_Movies_Series_R">
@@ -3390,9 +3390,9 @@ window.application = new Application();
 	</div>
 	<div id="Popular">
 		<div id="Movies">
-			<img id="Movie_2" src="Movie_2.png" srcset="Movie_2.png 1x, Movie_2@2x.png 2x">
+			<img id="Movie_2" src="public/img/Movie_2.png" srcset="public/img/Movie_2.png 1x, public/img/Movie_2@2x.png 2x">
 				
-			<img onclick="application.goToTargetView(event)" id="Movie_1" src="Movie_1.png" srcset="Movie_1.png 1x, Movie_1@2x.png 2x">
+			<img onclick="application.goToTargetView(event)" id="Movie_1" src="public/img/Movie_1.png" srcset="public/img/Movie_1.png 1x, public/img/Movie_1@2x.png 2x">
 				
 		</div>
 		<div id="Title">
@@ -3429,7 +3429,7 @@ window.application = new Application();
 				</svg>
 			</div>
 			<div id="Movie_Center" class="Movie_Center">
-				<img id="Background_Movie_Center" src="Background_Movie_Center.png" srcset="Background_Movie_Center.png 1x, Background_Movie_Center@2x.png 2x">
+				<img id="Background_Movie_Center" src="public/img/Background_Movie_Center.png" srcset="public/img/Background_Movie_Center.png 1x, public/img/Background_Movie_Center@2x.png 2x">
 					
 				<svg class="Filter_Movie_Center_bj">
 					<linearGradient id="Filter_Movie_Center_bj" spreadMethod="pad" x1="0.5" x2="0.5" y1="0" y2="1">

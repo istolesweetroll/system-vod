@@ -4,10 +4,8 @@
 <meta charset="utf-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<link rel="stylesheet" type="text/css" href="../css/style.css">
-<title>Add movie screen</title>
-
+<title>Sign up screen</title>
+<link rel="stylesheet" type="text/css" href="public\css\style.css">
 <script id="applicationScript">
 ///////////////////////////////////////
 // INITIALIZATION
@@ -2848,170 +2846,127 @@ window.application = new Application();
 </script>
 </head>
 <body>
-<div id="Add_movie_screen">
-	<svg class="Background">
-		<rect id="Background" rx="0" ry="0" x="0" y="0" width="1440" height="880">
+<div id="Sign_up_screen">
+	<svg class="Background_ci">
+		<rect id="Background_ci" rx="0" ry="0" x="0" y="0" width="1440" height="880">
 		</rect>
 	</svg>
-	<div id="Top">
-		<div id="Header">
-			<div id="Background_Shaodw">
-				<svg class="Background_Header">
-					<rect id="Background_Header" rx="0" ry="0" x="0" y="0" width="1440" height="100">
+	<div id="Top_cj">
+		<div id="Header_ck">
+			<div id="Background_Shaodw_cl">
+				<svg class="Background_Header_cm">
+					<rect id="Background_Header_cm" rx="0" ry="0" x="0" y="0" width="1440" height="100">
 					</rect>
 				</svg>
 			</div>
-			
-				
-			<div onclick="application.goToTargetView(event)" id="Component_1__18" class="Component_1___18">
-				
-						</div>
-			<div id="Component_68__23" class="Component_68___23">
-				<div id="Home_Movies_Series_R">
+		
+			<div id="Component_68__8" class="Component_68___8">
+				<div id="Home_Movies_Series_R_c">
 					<span>Home</span>
 				</div>
-				<div onclick="application.goToTargetView(event)" id="Home_Movies_Series_R_">
+				<div onclick="application.goToTargetView(event)" id="Home_Movies_Series_R_da">
 					<span></span><span style="color:rgba(255,255,255,0.345);">Series</span>
 				</div>
-				<div onclick="application.goToTargetView(event)" id="Home_Movies_Series_R_ba">
+				<div onclick="application.goToTargetView(event)" id="Home_Movies_Series_R_db">
 					<span></span><span style="color:rgba(255,255,255,0.345);">Recently added</span>
 				</div>
-				<div id="Home_Movies_Series_R_bb">
+				<div id="Home_Movies_Series_R_dc">
 					<span></span><span style="color:rgba(255,255,255,0.345);">Movies</span>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div id="Text">
-		<div id="Avengers__Endgame">
-			<span>DESCRIPTION:</span>
+	<div id="Text_c">
+		<div id="Avengers__Endgame_dd">
+			<span>USERNAME:</span>
 		</div>
-		<div id="Avengers__Endgame_bd">
-			<span>TITLE:</span>
+		<div id="Avengers__Endgame_da">
+			<span>EMAIL:</span>
+		</div>
+		<div id="Avengers__Endgame_db">
+			<span>PASSWORD:</span>
+		</div>
+		<div id="Avengers__Endgame_dc">
+			<span>REPEAT PASSWORD:</span>
+		</div>
+		<div id="Avengers__Endgame_dd">
+			<span>USERNAME:</span>
 		</div>
 	</div>
-	<div id="Component_32__2" class="Component_32___2">
-		<div id="Background_Search_Shadow_bf">
-			<svg class="Background_Search_bg">
-				<rect id="Background_Search_bg" rx="6" ry="6" x="0" y="0" width="546" height="44">
+	<div id="Component_2__1" class="Component_2___1">
+		<div id="Background_Search_Shadow_dd">
+			<svg class="Background_Search_de">
+				<rect id="Background_Search_de" rx="6" ry="6" x="0" y="0" width="546" height="44">
 				</rect>
 			</svg>
-			<div id="See_all">
-				<div id="See_all_bi">
-					<input name="title" type="text" placeholder="enter title">
-				
-				</div>
-			</div>
-		</div>
-		<div id="Background_Search_Shadow_bj">
-			<div id="Component_31__1" class="Component_31___1">
-				<svg class="Background_Search_bl">
-					<rect id="Background_Search_bl" rx="6" ry="6" x="0" y="0" width="546" height="44">
-					</rect>
-				</svg>
-				<div id="See_all_bm">
-					<div id="See_all_bn">
-						<input name="description" type="text" placeholder="enter description">
+			<div id="See_all_df">
+				<div id="Scroll_Group_9">
+					<div id="See_all_dh">
+						<input name="username" type="text" placeholder="enter username">
 				
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-	<div id="Background_Search_Shadow_bo" class="Background_Search_Shadow">
-		<svg class="Background_Search_bp">
-			<rect id="Background_Search_bp" rx="33" ry="33" x="0" y="0" width="250" height="66">
-			</rect>
-		</svg>
-		<div id="See_all_bq">
-			<div id="See_all_br">
-				<span>LOG IN</span>
+		<div id="Background_Search_Shadow_di">
+			<svg class="Background_Search_dj">
+				<rect id="Background_Search_dj" rx="6" ry="6" x="0" y="0" width="546" height="44">
+				</rect>
+			</svg>
+			<div id="See_all_dk">
+				<div id="See_all_dl">
+					<input name="email" type="email" placeholder="enter email">
+				
+				</div>
+			</div>
+		</div>
+		<div id="Background_Search_Shadow_dm">
+			<svg class="Background_Search_dn">
+				<rect id="Background_Search_dn" rx="6" ry="6" x="0" y="0" width="546" height="44">
+				</rect>
+			</svg>
+			<div id="See_all_do">
+				<div id="See_all_dq">
+					<input name="password" type="password" placeholder="enter password">
+				
+				</div>
+			
+			</div>
+		</div>
+		<div id="Background_Search_Shadow_dr">
+			<svg class="Background_Search_ds">
+				<rect id="Background_Search_ds" rx="6" ry="6" x="0" y="0" width="546" height="44">
+				</rect>
+			</svg>
+			<div id="See_all_dt">
+				<input name="password" type="password" placeholder="repeat password">
+				
+			</div>
+		</div>
+		<div id="Background_Search_Shadow_dv">
+			<svg class="Background_Search_dw">
+				<rect id="Background_Search_dw" rx="33" ry="33" x="0" y="0" width="250" height="66">
+				</rect>
+			</svg>
+			<div id="See_all_dx">
+				<div id="See_all_dy">
+					<span>SIGN UP</span>
+				</div>
 			</div>
 		</div>
 	</div>
-	<img id="w7tyrm8khve61" src="w7tyrm8khve61.png" srcset="w7tyrm8khve61.png 1x, w7tyrm8khve61@2x.png 2x">
+	<img id="w7tyrm8khve61" src="public/img/w7tyrm8khve61.png" srcset="public/img/w7tyrm8khve61.png 1x, public/img/w7tyrm8khve61@2x.png 2x">
 		
 	<svg class="Rectangle_2">
 		<rect id="Rectangle_2" rx="0" ry="0" x="0" y="0" width="1" height="10">
 		</rect>
 	</svg>
-	<div id="See_all_bu">
-		<div id="See_all_bv">
-			<span>NOT a user? sign up</span>
+	<div id="See_all_d">
+		<div onclick="application.goToTargetView(event)" id="See_all_ea">
+			<span>Already a user? log in</span>
 		</div>
-		<div id="See_all_bw">
+		<div id="See_all_eb">
 			<span>Forgot password?</span>
-		</div>
-	</div>
-	<div id="Text_bx">
-		<div id="Avengers__Endgame_by">
-			<span>LINK TO COVER:</span>
-		</div>
-		<div id="Avengers__Endgame_bz">
-			<span>LINK TO FILE:</span>
-		</div>
-	</div>
-	<div id="Component_32__4" class="Component_32___4">
-		<div id="Background_Search_Shadow_b">
-			<svg class="Background_Search_b">
-				<rect id="Background_Search_b" rx="6" ry="6" x="0" y="0" width="546" height="44">
-				</rect>
-			</svg>
-			<div id="See_all_b">
-				<div id="See_all_ca">
-					<input name="file_link" type="url" placeholder="enter link to file">
-				
-				</div>
-			</div>
-		</div>
-		<div id="Background_Search_Shadow_ca">
-			<div id="Component_31__1_b" class="Component_31___1">
-				<svg class="Background_Search_ca">
-					<rect id="Background_Search_ca" rx="6" ry="6" x="0" y="0" width="546" height="44">
-					</rect>
-				</svg>
-				<div id="See_all_cb">
-					<div id="See_all_cc">
-						<input name="cover_link" type="url" placeholder="enter link to cover">
-				
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div id="Text_ca">
-		<div id="Avengers__Endgame_cb">
-			<span>YEAR:</span>
-		</div>
-		<div id="Avengers__Endgame_cc">
-			<span>CATEGORY:</span>
-		</div>
-	</div>
-	<div id="Component_32__5" class="Component_32___5">
-		<div id="Background_Search_Shadow_ce">
-			<svg class="Background_Search_cf">
-				<rect id="Background_Search_cf" rx="6" ry="6" x="0" y="0" width="546" height="44">
-				</rect>
-			</svg>
-			<div id="See_all_cg">
-				<div id="See_all_ch">
-					<input name="category" type="text" placeholder="enter category">
-				
-				</div>
-			</div>
-		</div>
-		<div id="Background_Search_Shadow_ci">
-			<div id="Component_31__1_cj" class="Component_31___1">
-				<svg class="Background_Search_ck">
-					<rect id="Background_Search_ck" rx="6" ry="6" x="0" y="0" width="546" height="44">
-					</rect>
-				</svg>
-				<div id="See_all_cl">
-					<div id="See_all_cm">
-						<span>ENTER YEAR</span>
-					</div>
-				</div>
-			</div>
 		</div>
 	</div>
 </div>

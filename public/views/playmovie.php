@@ -112,7 +112,7 @@
 		overflow: visible;
 		--web-animation: fadein undefineds undefined;
 		--web-action-type: page;
-		--web-action-target: Sign_up_screen.html;
+		--web-action-target: signup;
 		cursor: pointer;
 	}
 	#Background_Search_Shadow_ {
@@ -247,7 +247,7 @@
 		overflow: visible;
 		--web-animation: fadein undefineds undefined;
 		--web-action-type: page;
-		--web-action-target: Sign_up_screen.html;
+		--web-action-target: signup;
 		cursor: pointer;
 	}
 	#Component_68__22 {
@@ -281,7 +281,7 @@
 		white-space: nowrap;
 		--web-animation: fadein undefineds undefined;
 		--web-action-type: page;
-		--web-action-target: Series_screen.html;
+		--web-action-target: series;
 		cursor: pointer;
 		text-align: center;
 		font-family: Fira Sans;
@@ -299,7 +299,7 @@
 		white-space: nowrap;
 		--web-animation: fadein undefineds undefined;
 		--web-action-type: page;
-		--web-action-target: Recently_added_screen.html;
+		--web-action-target: recentlyadded;
 		cursor: pointer;
 		text-align: center;
 		font-family: Fira Sans;
@@ -331,7 +331,7 @@
 		white-space: nowrap;
 		--web-animation: fadein undefineds undefined;
 		--web-action-type: page;
-		--web-action-target: moviescreen.html;
+		--web-action-target: ;
 		cursor: pointer;
 		text-align: center;
 		font-family: Fira Sans;
@@ -3190,9 +3190,9 @@ window.application = new Application();
 				</rect>
 			</svg>
 		</div>
-		<img id="Search_bb" src="Search_bb.png" srcset="Search_bb.png 1x, Search_bb@2x.png 2x">
+		<img id="Search_bb" src="public/img/Search_bb.png" srcset="public/img/Search_bb.png 1x, public/img/Search_bb@2x.png 2x">
 			
-		<img id="Search_bb" src="Search_bb.png" srcset="Search_bb.png 1x, Search_bb@2x.png 2x">
+		<img id="Search_bb" src="public/img/Search_bb.png" srcset="public/img/Search_bb.png 1x, public/img/Search_bb@2x.png 2x">
 			
 			<div onclick="application.goToTargetView(event)" id="Component_1__14" class="Component_1___14">
 				<div id="Background_Search_Shadow_">
@@ -3232,9 +3232,9 @@ window.application = new Application();
 				</rect>
 			</svg>
 		</div>
-		<img id="Search_bb" src="Search_bb.png" srcset="Search_bb.png 1x, Search_bb@2x.png 2x">
+		<img id="Search_bb" src="public/img/Search_bb.png" srcset="public/img/Search_bb.png 1x, public/img/Search_bb@2x.png 2x">
 			
-		<img onclick="application.goToTargetView(event)" id="Component_1__17" src="Component_1__17.png" srcset="Component_1__17.png 1x, Component_1__17@2x.png 2x">
+		<img onclick="application.goToTargetView(event)" id="Component_1__17" src="public/img/Component_1__17.png" srcset="public/img/Component_1__17.png 1x, public/img/Component_1__17@2x.png 2x">
 			
 		<div id="Component_68__22" class="Component_68___22">
 			<div id="Home_Movies_Series_R_be">
