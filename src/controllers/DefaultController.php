@@ -9,9 +9,9 @@ class DefaultController extends AppController {
         $this->render('movies');
     }
 
-    public function login()
+    public function login1()
     {
-        $this->render('login');
+        $this->render('login1');
     }
     public function signup()
     {

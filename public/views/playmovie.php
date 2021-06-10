@@ -3191,9 +3191,9 @@ window.application = new Application();
 			</svg>
 		</div>
 		<img id="Search_bb" src="public/img/Search_bb.png" srcset="public/img/Search_bb.png 1x, public/img/Search_bb@2x.png 2x">
-			
+
 		<img id="Search_bb" src="public/img/Search_bb.png" srcset="public/img/Search_bb.png 1x, public/img/Search_bb@2x.png 2x">
-			
+
 			<div onclick="application.goToTargetView(event)" id="Component_1__14" class="Component_1___14">
 				<div id="Background_Search_Shadow_">
 					<svg class="Background_Search_" viewBox="0 0 44 44">
@@ -3215,14 +3215,18 @@ window.application = new Application();
 		<rect id="Rectangle_2" rx="0" ry="0" x="0" y="0" width="1" height="10">
 		</rect>
 	</svg>
-	
+
 	<svg class="Path_17" viewBox="0 0 1440 780">
 		<path id="Path_17" d="M 0 0 L 1440 0 L 1440 780 L 0 780 L 0 0 Z">
 		</path>
 	</svg>
-				
+
 	<video width="1440" height="780" controls>
-		<source src="https://ia600902.us.archive.org/25/items/night_of_the_living_dead_dvd/Night.mp4" type="video/mp4">
+                   <?php
+        $MovieRepository = new MovieRepository();
+        $fileLink= $MovieRepository ->getFileLink($_GET["n"]);
+        echo '<source src="'.$fileLink.'" type="video/mp4">';
+        ?>
 
 	  </video>
 	<div id="Header_">
@@ -3233,9 +3237,9 @@ window.application = new Application();
 			</svg>
 		</div>
 		<img id="Search_bb" src="public/img/Search_bb.png" srcset="public/img/Search_bb.png 1x, public/img/Search_bb@2x.png 2x">
-			
+
 		<img onclick="application.goToTargetView(event)" id="Component_1__17" src="public/img/Component_1__17.png" srcset="public/img/Component_1__17.png 1x, public/img/Component_1__17@2x.png 2x">
-			
+
 		<div id="Component_68__22" class="Component_68___22">
 			<div id="Home_Movies_Series_R_be">
 				<span>Home</span>

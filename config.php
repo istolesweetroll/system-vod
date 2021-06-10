@@ -1,5 +1,5 @@
 <?php
-const USERNAME = 'drtpylvwouygif';
-const PASSWORD = 'b10bf167c5233fa2cac1bf43b13d574a13421ed727966b43d270cf6ad4e4c2b1';
-const HOST = 'ec2-54-216-185-51.eu-west-1.compute.amazonaws.com';
-const DATABASE = 'd2cvs6b2mefmva';
+const USERNAME = 'fgykewrveyurgo';
+const PASSWORD = '009da0ad36f0e4a5d1b6a5ecc3a96033e8616dc36301907969457b3f2d9fe687';
+const HOST = 'ec2-34-242-89-204.eu-west-1.compute.amazonaws.com';
+const DATABASE = 'd726hi8ka619ni';

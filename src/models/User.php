@@ -6,15 +6,14 @@ class User
 private $email;
 private $password;
 private $username;
-private $branch;
 
 
-    public function __construct(string $email, string $password, string $username, string $branch)
+    public function __construct(string $email, string $password, string $username)
     {
         $this->email = $email;
         $this->password = $password;
         $this->username = $username;
-        $this->branch = $branch;
+
     }
 
     /**
@@ -65,20 +64,5 @@ private $branch;
         $this->username = $username;
     }
 
-    /**
-     * @return string
-     */
-    public function getBranch(): string
-    {
-        return $this->branch;
-    }
-
-    /**
-     * @param string $branch
-     */
-    public function setBranch(string $branch)
-    {
-        $this->branch = $branch;
-    }
 
 }

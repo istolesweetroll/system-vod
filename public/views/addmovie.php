@@ -460,6 +460,20 @@
 		color: rgba(255,255,255,1);
 		text-transform: uppercase;
 	}
+        button{
+            left: 0px;
+            top: 4px;
+            position: absolute;
+            overflow: visible;
+            width: 100px;
+            white-space: nowrap;
+            text-align: center;
+            font-family: Fira Sans;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 21px;
+
+        }
 	#See_all_fd {
 		left: 0px;
 		top: 0px;
@@ -5081,6 +5095,7 @@ window.application = new Application();
 				<rect id="Background_Search_bg" rx="6" ry="6" x="0" y="0" width="546" height="44">
 				</rect>
 			</svg>
+            <form class="addmovie" action="addMovie" method="post">
 			<div id="See_all">
 				<div id="See_all_bi">
 					<input name="title" type="text" placeholder="enter title">
@@ -5110,7 +5125,7 @@ window.application = new Application();
 		</svg>
 		<div id="See_all_bq">
 			<div id="See_all_br">
-				<span>LOG IN</span>
+				<span><button>SUBMIT</button></span>
 			</div>
 		</div>
 	</div>
@@ -5121,12 +5136,6 @@ window.application = new Application();
 		</rect>
 	</svg>
 	<div id="See_all_bu">
-		<div id="See_all_bv">
-			<span>NOT a user? sign up</span>
-		</div>
-		<div id="See_all_bw">
-			<span>Forgot password?</span>
-		</div>
 	</div>
 	<div id="Text_bx">
 		<div id="Avengers__Endgame_by">
@@ -5144,7 +5153,7 @@ window.application = new Application();
 			</svg>
 			<div id="See_all_b">
 				<div id="See_all_ca">
-					<input name="file_link" type="url" placeholder="enter link to file">
+					<input name="fileLink" type="url" placeholder="enter link to file">
 				
 				</div>
 			</div>
@@ -5157,7 +5166,7 @@ window.application = new Application();
 				</svg>
 				<div id="See_all_cb">
 					<div id="See_all_cc">
-						<input name="cover_link" type="url" placeholder="enter link to cover">
+						<input name="coverLink" type="url" placeholder="enter link to cover">
 				
 					</div>
 				</div>
@@ -5166,7 +5175,7 @@ window.application = new Application();
 	</div>
 	<div id="Text_ca">
 		<div id="Avengers__Endgame_cb">
-			<span>YEAR:</span>
+			<span>RELEASE DATE:</span>
 		</div>
 		<div id="Avengers__Endgame_cc">
 			<span>CATEGORY:</span>
@@ -5192,8 +5201,10 @@ window.application = new Application();
 					</rect>
 				</svg>
 				<div id="See_all_cl">
-					<div id="See_all_cm">
-						<span>ENTER YEAR</span>
+                    <input name="releasedate" type="date" placeholder="enter release date">
+
+                </form>
+                    <div id="See_all_cm">
 					</div>
 				</div>
 			</div>
