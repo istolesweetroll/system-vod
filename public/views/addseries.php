@@ -5,12 +5,6 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
-		.mediaViewInfo {
-		--web-view-name: addmovie;
-		--web-view-id: addmovie;
-		--web-scale-on-resize: true;
-		--web-enable-deep-linking: true;
-	}
 	:root {
 		--web-view-ids: addmovie;
 	}
@@ -19,8 +13,23 @@
 	color: white;
 
 }
+    button{
+        left: 0px;
+        top: 4px;
+        position: absolute;
+        overflow: visible;
+        width: 100px;
+        white-space: nowrap;
+        text-align: center;
+        font-family: Fira Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 21px;
 
-	* {
+    }
+
+
+    * {
 		margin: 0;
 		padding: 0;
 		box-sizing: border-box;
@@ -35,20 +44,6 @@
 		top: 0px;
 		overflow: visible;
 	}
-        button{
-            left: 0px;
-            top: 4px;
-            position: absolute;
-            overflow: visible;
-            width: 100px;
-            white-space: nowrap;
-            text-align: center;
-            font-family: Fira Sans;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 21px;
-
-        }
 
 	:root {
 		--web-view-ids: Sign_up_screen;
@@ -59,6 +54,7 @@
 		box-sizing: border-box;
 		border: none;
 	}
+
 	#w7tyrm8khve61 {
 		position: absolute;
 		width: 552px;
@@ -77,14 +73,14 @@
 		shape-rendering: auto;
 	}
 	.Rectangle_2 {
-        position: absolute;
-        overflow: visible;
-        width: 1px;
-        height: 10px;
-        left: 1272px;
-        top: 712px;
-    }
-        :root {
+		position: absolute;
+		overflow: visible;
+		width: 1px;
+		height: 10px;
+		left: 1272px;
+		top: 712px;
+	}
+		:root {
 		--web-view-ids: Add_movie_screen;
 	}
 	* {
@@ -151,20 +147,6 @@
 		left: 0px;
 		top: 0px;
 	}
-
-	#Component_1__18 {
-		position: absolute;
-		width: 44px;
-		height: 44px;
-		left: 1372px;
-		top: 28px;
-		overflow: visible;
-		--web-animation: fadein undefineds undefined;
-		--web-action-type: page;
-		--web-action-target: signup;
-		cursor: pointer;
-	}
-
 	#Component_68__23 {
 		position: absolute;
 		width: 486px;
@@ -470,7 +452,40 @@
 		top: 794px;
 		overflow: visible;
 	}
-
+	#See_all_bv {
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 146px;
+		white-space: nowrap;
+		line-height: 18px;
+		margin-top: -1.5px;
+		text-align: right;
+		font-family: Fira Sans;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 15px;
+		color: rgba(255,255,255,1);
+		text-transform: uppercase;
+	}
+	#See_all_bw {
+		left: 0px;
+		top: 24px;
+		position: absolute;
+		overflow: visible;
+		width: 140px;
+		white-space: nowrap;
+		line-height: 18px;
+		margin-top: -1.5px;
+		text-align: right;
+		font-family: Fira Sans;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 15px;
+		color: rgba(255,255,255,1);
+		text-transform: uppercase;
+	}
 	#Text_bx {
 		position: absolute;
 		width: 300px;
@@ -777,6 +792,7 @@
 	}
 </style>
 <title>Add movie screen</title>
+
 </head>
 <body>
 <div id="Add_movie_screen">
@@ -793,33 +809,27 @@
 				</svg>
 			</div>
 
-
-			<div id="Component_1__18" class="Component_1___18">
-
-						</div>
 			<div id="Component_68__23" class="Component_68___23">
 				<div id="Home_Movies_Series_R">
-                    <A class=wsnextlink1 href="movies" style="color:rgba(255,255,255,0.345)"> Home </A>
-				</div>
+
+                          <A class=wsnextlink1 href="movies" style="color:rgba(255,255,255,0.345)"> Home </A>
+
+        </div>
 				<div id="Home_Movies_Series_R_">
                     <A class=wsnextlink1 href="series" style="color:rgba(255,255,255,0.345)"> Series </A>
-
-				</div>
-				<div  id="Home_Movies_Series_R_ba">
+                </div>
+				<div id="Home_Movies_Series_R_ba">
                     <A class=wsnextlink1 href="recentlyadded" style="color:rgba(255,255,255,0.345)"> Recently added </A>
-
                 </div>
 				<div id="Home_Movies_Series_R_bb">
                     <div  id="Home_Movies_Series_R_z"><A class=wsnextlink1 href="movies" style="color:rgba(255,255,255,0.345)"> Movies </A>
-
-				</div>
-
+                    </div>
 			</div>
 		</div>
 	</div>
 	<div id="Text">
 		<div id="Avengers__Endgame">
-			<span>DESCRIPTION:</span>
+			<span>SXEY CODE:</span>
 		</div>
 		<div id="Avengers__Endgame_bd">
 			<span>TITLE:</span>
@@ -834,11 +844,11 @@
 				<rect id="Background_Search_bg" rx="6" ry="6" x="0" y="0" width="546" height="44">
 				</rect>
 			</svg>
-            <form class="addmovie" action="addMovie" method="post">
+            <form class="addmovie" action="addSeries" method="post">
 			<div id="See_all">
 				<div id="See_all_bi">
-					<input name="title" type="text"  required = "required" placeholder="enter title">
-
+					<input name="title" required = "required" type="text" placeholder="enter title">
+				
 				</div>
 			</div>
 		</div>
@@ -850,8 +860,8 @@
 				</svg>
 				<div id="See_all_bm">
 					<div id="See_all_bn">
-						<input name="description" type="text" required = "required" placeholder="enter description">
-
+						<input name="code" type="text" required = "required" placeholder="enter SXEY code">
+				
 					</div>
 				</div>
 			</div>
@@ -869,7 +879,7 @@
 		</div>
 	</div>
 	<img id="w7tyrm8khve61" src="public/img/w7tyrm8khve61.png" srcset="public/img/w7tyrm8khve61.png 1x, public/img/w7tyrm8khve61@2x.png 2x">
-
+		
 	<svg class="Rectangle_2">
 		<rect id="Rectangle_2" rx="0" ry="0" x="0" y="0" width="1" height="10">
 		</rect>
@@ -883,7 +893,6 @@
 		<div id="Avengers__Endgame_bz">
 			<span>LINK TO FILE:</span>
 		</div>
-
 	</div>
 	<div id="Component_32__4" class="Component_32___4">
 		<div id="Background_Search_Shadow_b">
@@ -893,8 +902,8 @@
 			</svg>
 			<div id="See_all_b">
 				<div id="See_all_ca">
-					<input name="fileLink" type="url" required = "required" placeholder="enter link to file">
-
+					<input name="fileLink" type="url"  required = "required" placeholder="enter link to file">
+				
 				</div>
 			</div>
 		</div>
@@ -907,7 +916,7 @@
 				<div id="See_all_cb">
 					<div id="See_all_cc">
 						<input name="coverLink" type="url" required = "required" placeholder="enter link to cover">
-
+				
 					</div>
 				</div>
 			</div>
@@ -931,7 +940,7 @@
 			<div id="See_all_cg">
 				<div id="See_all_ch">
 					<input name="category" type="text" required = "required" placeholder="enter category">
-
+				
 				</div>
 			</div>
 		</div>
@@ -941,8 +950,8 @@
 					<rect id="Background_Search_ck" rx="6" ry="6" x="0" y="0" width="546" height="44">
 					</rect>
 				</svg>
-				<div id="See_all_cl" >
-                    <input name="releasedate" style="font: color:rgba(255,255,255,0.345)" type="date" required = "required" placeholder="enter release date">
+				<div id="See_all_cl">
+                    <input name="releasedate" type="date" required = "required" placeholder="enter release date">
 
                 </form>
                     <div id="See_all_cm">

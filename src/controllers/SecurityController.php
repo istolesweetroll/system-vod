@@ -62,4 +62,20 @@ class SecurityController extends AppController {
         return $this->render('series', ['messages' => ['Movie added!']]);
 
     }
+    public function addSeries(){
+        $movieRepository = new MovieRepository();
+        $title = $_POST['title'];
+        $code = $_POST['code'];
+        $fileLink = $_POST['fileLink'];
+        $coverLink = $_POST['coverLink'];
+        $releaseDate = $_POST['releasedate'];
+        $category = $_POST['category'];
+
+        $series = new Series($title, $code, $fileLink, $coverLink, $releaseDate, $category);
+        $movieRepository->addSeries($series);
+
+        return $this->render('series', ['messages' => ['Movie added!']]);
+
+    }
+
 }

@@ -1,11 +1,13 @@
-	.mediaViewInfo {
-		--web-view-name: Sign up screen – 1;
-		--web-view-id: Sign_up_screen__1;
-		--web-scale-on-resize: true;
-		--web-enable-deep-linking: true;
-	}
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+
 	:root {
-		--web-view-ids: Sign_up_screen__1;
+		--web-view-ids: addmovie;
 	}
 	input {
     background-color:	rgba(49,28,105,1);
@@ -19,405 +21,56 @@
 		box-sizing: border-box;
 		border: none;
 	}
+        #Movie_2 {
+            filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.098));
+            position: absolute;
+            width: 307.5px;
+            height: 313px;
+            left: 77px;
+            top: 150px;
+            overflow: visible;
+        }
 
-	#Sign_up_screen__1 {
-		position: absolute;
-		width: 1440px;
-		height: 880px;
-		background-color: rgba(148,183,156,1);
-		overflow: hidden;
-		--web-view-name: Sign up screen – 1;
-		--web-view-id: Sign_up_screen__1;
-		--web-scale-on-resize: true;
-		--web-enable-deep-linking: true;
-	}
-	#Background_d {
-		fill: rgba(156,185,157,1);
-	}
-	.Background_d {
-		position: absolute;
-		overflow: visible;
-		width: 1440px;
-		height: 880px;
-		left: 0px;
-		top: 0px;
-	}
-	#Top_d {
-		position: absolute;
-		width: 1440px;
-		height: 100px;
-		left: 0px;
-		top: 0px;
-		overflow: visible;
-	}
-	#Header_d {
-		position: absolute;
-		width: 1440px;
-		height: 100px;
-		left: 0px;
-		top: 0px;
-		overflow: visible;
-	}
-	#Background_Shaodw_d {
-		position: absolute;
-		width: 1440px;
-		height: 100px;
-		left: 0px;
-		top: 0px;
-		overflow: visible;
-	}
-	#Background_Header_ea {
-		fill: rgba(49,28,105,1);
-	}
-	.Background_Header_ea {
-		filter: drop-shadow(0px 8px 16px rgba(0, 0, 0, 0.549));
-		position: absolute;
-		overflow: visible;
-		width: 1488px;
-		height: 148px;
-		left: 0px;
-		top: 0px;
-	}
-	#Search_eg {
-		position: absolute;
-		width: 44px;
-		height: 44px;
-		left: 1321px;
-		top: 28px;
-		overflow: visible;
-	}
-	#Background_Search_Shadow_eh {
-		position: absolute;
-		width: 44px;
-		height: 44px;
-		left: 0px;
-		top: 0px;
-		overflow: visible;
-	}
-	#Background_Search_ed {
-		fill: rgba(41,42,44,1);
-	}
-	.Background_Search_ed {
-		position: absolute;
-		overflow: visible;
-		width: 44px;
-		height: 44px;
-		left: 0px;
-		top: 0px;
-	}
-	#Icon_Search_ej {
-		position: absolute;
-		width: 18px;
-		height: 18px;
-		left: 13px;
-		top: 13px;
-		overflow: visible;
-	}
-	#Shape_ek {
-		fill: rgba(255,255,255,1);
-	}
-	.Shape_ek {
-		filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.204));
-		overflow: visible;
-		position: absolute;
-		width: 30px;
-		height: 30px;
-		left: 0px;
-		top: 0px;
-		transform: matrix(1,0,0,1,0,0);
-	}
-	#Search_eg {
-		position: absolute;
-		width: 44px;
-		height: 44px;
-		left: 1321px;
-		top: 28px;
-		overflow: visible;
-	}
-	#Background_Search_Shadow_eh {
-		position: absolute;
-		width: 44px;
-		height: 44px;
-		left: 0px;
-		top: 0px;
-		overflow: visible;
-	}
-	#Background_Search_ei {
-		fill: rgba(41,42,44,1);
-		stroke: rgba(156,185,157,1);
-		stroke-width: 6px;
-		stroke-linejoin: miter;
-		stroke-linecap: butt;
-		stroke-miterlimit: 4;
-		shape-rendering: auto;
-	}
-	button{
-		left: 0px;
-		top: 4px;
-		position: absolute;
-		overflow: visible;
-		width: 100px;
-		white-space: nowrap;
-		text-align: center;
-		font-family: Fira Sans;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 21px;
+        #Movie_1 {
+            filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.098));
+            position: absolute;
+            width: 307.5px;
+            height:313px;
+            left: -250px;
+            top: 150px;
+            overflow: visible;
+            --web-animation: fadein 0.3s ease-out;
+            --web-action-type: page;
+            --web-action-target: playmovie;
+            cursor: pointer;
+        }
+        #Movie_3 {
+            filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.098));
+            position: absolute;
+            width: 307.5px;
+            height: 313px;
+            left: -250px;
+            top: 300px;
+            overflow: visible;
+            --web-animation: fadein 0.3s ease-out;
+            --web-action-type: page;
+            --web-action-target: playmovie;
+            cursor: pointer;
+        }
+        #Movie_4 {
+            filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.098));
+            position: absolute;
+            width: 307.5px;
+            height: 313px;
+            left: -250px;
+            top: 300px;
+            overflow: visible;
+            --web-animation: fadein 0.3s ease-out;
+            --web-action-type: page;
+            --web-action-target: playmovie;
+            cursor: pointer;
+        }
 
-	}
-	.Background_Search_ei {
-		position: absolute;
-		overflow: visible;
-		width: 50px;
-		height: 50px;
-		left: 0px;
-		top: 0px;
-	}
-	#Icon_Search_ej {
-		position: absolute;
-		width: 18px;
-		height: 18px;
-		left: 13px;
-		top: 13px;
-		overflow: visible;
-	}
-	#Shape_ek {
-		fill: rgba(255,255,255,1);
-	}
-	.Shape_ek {
-		filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.204));
-		overflow: visible;
-		position: absolute;
-		width: 30px;
-		height: 30px;
-		left: 0px;
-		top: 0px;
-		transform: matrix(1,0,0,1,0,0);
-	}
-	#Component_1__8 {
-		position: absolute;
-		width: 44px;
-		height: 44px;
-		left: 1372px;
-		top: 28px;
-		overflow: visible;
-		--web-animation: fadein undefineds undefined;
-		--web-action-type: page;
-		--web-action-target: Sign_up_screen.html;
-		cursor: pointer;
-	}
-	#Background_Search_Shadow_em {
-		position: absolute;
-		width: 44px;
-		height: 44px;
-		left: 0px;
-		top: 0px;
-		overflow: visible;
-	}
-	#Background_Search_en {
-		fill: rgba(41,42,44,1);
-		stroke: rgba(156,185,157,1);
-		stroke-width: 6px;
-		stroke-linejoin: miter;
-		stroke-linecap: butt;
-		stroke-miterlimit: 4;
-		shape-rendering: auto;
-	}
-	.Background_Search_en {
-		overflow: visible;
-		position: absolute;
-		width: 50px;
-		height: 50px;
-		left: 0px;
-		top: 0px;
-		transform: matrix(1,0,0,1,0,0);
-	}
-	#Icon_material-account-circle_eo {
-		fill: rgba(255,255,255,1);
-	}
-	.Icon_material-account-circle_eo {
-		overflow: visible;
-		position: absolute;
-		width: 30px;
-		height: 30px;
-		left: 7px;
-		top: 7px;
-		transform: matrix(1,0,0,1,0,0);
-	}
-	#Component_68__19 {
-		position: absolute;
-		width: 486px;
-		height: 26px;
-		left: 477px;
-		top: 38px;
-		overflow: visible;
-	}
-	#Home_Movies_Series_R_eq {
-		left: 0px;
-		top: 0px;
-		position: absolute;
-		overflow: visible;
-		width: 57px;
-		white-space: nowrap;
-		text-align: center;
-		font-family: Fira Sans;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 21px;
-		color: rgba(255,255,255,0.353);
-	}
-	#Home_Movies_Series_R_er {
-		left: 224px;
-		top: 0px;
-		position: absolute;
-		overflow: visible;
-		width: 61px;
-		white-space: nowrap;
-		--web-animation: fadein undefineds undefined;
-		--web-action-type: page;
-		--web-action-target: Series_screen.html;
-		cursor: pointer;
-		text-align: center;
-		font-family: Fira Sans;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 21px;
-		color: rgba(255,255,255,0.353);
-	}
-	#Home_Movies_Series_R_es {
-		left: 338px;
-		top: 0px;
-		position: absolute;
-		overflow: visible;
-		width: 149px;
-		white-space: nowrap;
-		--web-animation: fadein undefineds undefined;
-		--web-action-type: page;
-		--web-action-target: Recently_added_screen.html;
-		cursor: pointer;
-		text-align: center;
-		font-family: Fira Sans;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 21px;
-		color: rgba(255,255,255,0.353);
-	}
-	#Home_Movies_Series_R_et {
-		left: 107px;
-		top: 0px;
-		position: absolute;
-		overflow: visible;
-		width: 67px;
-		white-space: nowrap;
-		text-align: center;
-		font-family: Fira Sans;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 21px;
-		color: rgba(255,255,255,0.353);
-	}
-	#Text_eu {
-		position: absolute;
-		width: 300px;
-		height: 141px;
-		left: 24px;
-		top: 370px;
-		overflow: visible;
-	}
-	#Avengers__Endgame_ev {
-		left: 0px;
-		top: 98px;
-		position: absolute;
-		overflow: visible;
-		width: 301px;
-		height: 43px;
-		text-align: left;
-		font-family: Fira Sans;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 30px;
-		color: rgba(255,255,255,1);
-	}
-	#Avengers__Endgame_ew {
-		left: 0px;
-		top: 0px;
-		position: absolute;
-		overflow: visible;
-		width: 301px;
-		height: 43px;
-		text-align: left;
-		font-family: Fira Sans;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 30px;
-		color: rgba(255,255,255,1);
-	}
-	#Component_32__1 {
-		position: absolute;
-		width: 546px;
-		height: 144px;
-		left: 203px;
-		top: 368px;
-		overflow: visible;
-	}
-	#Background_Search_Shadow_ey {
-		position: absolute;
-		width: 546px;
-		height: 44px;
-		left: 0px;
-		top: 0px;
-		overflow: visible;
-	}
-	#Background_Search_ez {
-		fill: rgba(49,28,105,1);
-		stroke: rgba(255,255,255,1);
-		stroke-width: 6px;
-		stroke-linejoin: miter;
-		stroke-linecap: butt;
-		stroke-miterlimit: 4;
-		shape-rendering: auto;
-	}
-	.Background_Search_ez {
-		position: absolute;
-		overflow: visible;
-		width: 552px;
-		height: 50px;
-		left: 0px;
-		top: 0px;
-	}
-	#See_all_e {
-		position: absolute;
-		width: 130px;
-		height: 18px;
-		left: 12px;
-		top: 13px;
-		overflow: visible;
-	}
-	#See_all_fa {
-		left: 0px;
-		top: 0px;
-		position: absolute;
-		overflow: visible;
-		width: 131px;
-		white-space: nowrap;
-		line-height: 18px;
-		margin-top: -1.5px;
-		text-align: right;
-		font-family: Fira Sans;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 15px;
-		color: rgba(255,255,255,1);
-		text-transform: uppercase;
-	}
-	#Background_Search_Shadow_e {
-		position: absolute;
-		width: 546px;
-		height: 44px;
-		left: 0px;
-		top: 100px;
-		overflow: visible;
-	}
 	#Component_31__1 {
 		position: absolute;
 		width: 546px;
@@ -468,6 +121,20 @@
 		color: rgba(255,255,255,1);
 		text-transform: uppercase;
 	}
+        button{
+            left: 0px;
+            top: 4px;
+            position: absolute;
+            overflow: visible;
+            width: 100px;
+            white-space: nowrap;
+            text-align: center;
+            font-family: Fira Sans;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 21px;
+
+        }
 	#See_all_fd {
 		left: 0px;
 		top: 0px;
@@ -575,7 +242,7 @@
 		white-space: nowrap;
 		--web-animation: fadein undefineds undefined;
 		--web-action-type: page;
-		--web-action-target: Sign_up_screen.html;
+		--web-action-target: signup;
 		cursor: pointer;
 		line-height: 18px;
 		margin-top: -1.5px;
@@ -857,7 +524,7 @@
 		white-space: nowrap;
 		--web-animation: fadein undefineds undefined;
 		--web-action-type: page;
-		--web-action-target: Series_screen.html;
+		--web-action-target: series;
 		cursor: pointer;
 		text-align: center;
 		font-family: Fira Sans;
@@ -875,7 +542,7 @@
 		white-space: nowrap;
 		--web-animation: fadein undefineds undefined;
 		--web-action-type: page;
-		--web-action-target: Recently_added_screen.html;
+		--web-action-target: recentlyadded;
 		cursor: pointer;
 		text-align: center;
 		font-family: Fira Sans;
@@ -1300,7 +967,7 @@
 		white-space: nowrap;
 		--web-animation: fadein undefineds undefined;
 		--web-action-type: page;
-		--web-action-target: Sign_up_screen___1.html;
+		--web-action-target: login;
 		cursor: pointer;
 		line-height: 18px;
 		margin-top: -1.5px;
@@ -1514,7 +1181,7 @@
 		overflow: visible;
 		--web-animation: fadein undefineds undefined;
 		--web-action-type: page;
-		--web-action-target: Sign_up_screen.html;
+		--web-action-target: signup;
 		cursor: pointer;
 	}
 	#Background_Search_Shadow_ {
@@ -1586,7 +1253,7 @@
 		white-space: nowrap;
 		--web-animation: fadein undefineds undefined;
 		--web-action-type: page;
-		--web-action-target: Series_screen.html;
+		--web-action-target: series;
 		cursor: pointer;
 		text-align: center;
 		font-family: Fira Sans;
@@ -1604,7 +1271,7 @@
 		white-space: nowrap;
 		--web-animation: fadein undefineds undefined;
 		--web-action-type: page;
-		--web-action-target: Recently_added_screen.html;
+		--web-action-target: recentlyadded;
 		cursor: pointer;
 		text-align: center;
 		font-family: Fira Sans;
@@ -1801,8 +1468,8 @@
 		overflow: visible;
 		width: 256px;
 		height: 72px;
-		left: 0px;
-		top: 0px;
+		left: 90px;
+		top: -460px;
 	}
 	#See_all_bq {
 		position: absolute;
@@ -1813,8 +1480,8 @@
 		overflow: visible;
 	}
 	#See_all_br {
-		left: 0px;
-		top: 0px;
+		left: 90px;
+		top: -460px;
 		position: absolute;
 		overflow: visible;
 		width: 91px;
@@ -2198,118 +1865,169 @@
 		color: rgba(255,255,255,1);
 		text-transform: uppercase;
 	}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+</style>
+<title>Search screen</title>
+
+</head>
+<body>
+<div id="Add_movie_screen">
+	<svg class="Background">
+		<rect id="Background" rx="0" ry="0" x="0" y="0" width="1440" height="880">
+		</rect>
+	</svg>
+	<div id="Top">
+		<div id="Header">
+			<div id="Background_Shaodw">
+				<svg class="Background_Header">
+					<rect id="Background_Header" rx="0" ry="0" x="0" y="0" width="1440" height="100">
+					</rect>
+				</svg>
+			</div>
+
+
+
+						</div>
+			<div id="Component_68__23" class="Component_68___23">
+				<div id="Home_Movies_Series_R">
+                    <A class=wsnextlink1 href="movies" style="color:rgba(255,255,255,0.345)"> Home </A>
+				</div>
+				<div  id="Home_Movies_Series_R_">
+					<A class=wsnextlink1 href="series" style="color:rgba(255,255,255,0.345)"> Series </A>
+				</div>
+				<div onclick="application.goToTargetView(event)" id="Home_Movies_Series_R_ba">
+                    <A class=wsnextlink1 href="recentlyadded" style="color:rgba(255,255,255,0.345)"> Recently added </A>
+				</div>
+				<div id="Home_Movies_Series_R_bb">
+                    <A class=wsnextlink1 href="movies" style="color:rgba(255,255,255,0.345)"> Movies </A>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="Text">
+
+		<div id="Avengers__Endgame_bd">
+			<span>SEARCH BY TITLE:</span>
+
+		</div>
+
+
+	</div>
+	<div id="Component_32__2" class="Component_32___2">
+		<div id="Background_Search_Shadow_bf">
+			<svg class="Background_Search_bg">
+				<rect id="Background_Search_bg" rx="6" ry="6" x="0" y="0" width="546" height="44">
+				</rect>
+			</svg>
+
+			<div id="See_all">
+                <form action = 'searchResults'>
+				<div id="See_all_bi">
+					<input name="title" type="text" placeholder="enter title">
+
+				</div>
+			</div>
+
+		</div>
+        <div id="Movies">
+
+            <?php
+            $MovieRepository = new MovieRepository();
+            $m = $MovieRepository->searchMovies($_GET["title"]);
+            $m_length = count($m);
+            $s = $MovieRepository->searchSeries($_GET["title"]);
+            $s_length = count($s);
+
+            $counter = 0;
+            if(array_values($m)[0] != "NO RESULTS FOUND"){
+            if ($m_length == 1) {
+                $CL = $MovieRepository->getCoverLinkMovie(array_values($m)[0]);
+                echo '<a href="playmovie?n=' . array_values($m)[0] . '"><img id="Movie_1" src=' . $CL . ' "/></a>';
+           $counter = 1;
+            }
+            if ($m_length >= 2) {
+                $CL = $MovieRepository->getCoverLinkMovie(array_values($m)[1]);
+                echo '<a href="playmovie?n=' . array_values($m)[1] . '"&><img id="Movie_2" src=' . $CL . ' "/></a>';
+            $counter = 2;
+            }
+            if ($m_length >= 3) {
+                $CL = $MovieRepository->getCoverLinkMovie(array_values($m)[2]);
+                echo '<a href="playmovie?n=' . array_values($m)[2] . '"><img id="Movie_3" src=' . $CL . ' "/></a>';
+           $counter = 3;
+            }
+            if ($m_length >= 4) {
+                $CL = $MovieRepository->getCoverLinkMovie(array_values($m)[3]);
+                echo '<a href="playmovie?n=' . array_values($m)[3] . '"><img id="Movie_4" src=' . $CL . ' "/></a>';;
+           $counter = 4;
+            }}
+            if(array_values($s)[0] != "NO RESULTS FOUND"){
+            if ($s_length == 1 && $counter <= 4) {
+                $counter ++;
+                $CL = $MovieRepository->getCoverLinkSeries(array_values($s)[0]);
+                echo '<a href="playmovie?n=' . array_values($m)[0] . '"><img id="Movie_'.$counter.'" src=' . $CL . ' "/></a>';
+
+            }
+            if ($s_length >= 2 && $counter <= 4)  {
+                $counter ++;
+                $CL = $MovieRepository->getCoverLinkSeries(array_values($s)[1]);
+                echo '<a href="playmovie?n=' . array_values($m)[1] . '"&><img id="Movie_'.$counter.'" src=' . $CL . ' "/></a>';
+
+            }
+            if ($s_length >= 3 && $counter <= 4) {
+                $counter ++;
+                $CL = $MovieRepository->getCoverLinkSeries(array_values($s)[2]);
+                echo '<a href="playmovie?n=' . array_values($m)[2] . '"><img id="Movie_'.$counter.'" src=' . $CL . ' "/></a>';
+
+            }
+            if ($s_length >= 4 && $counter <= 4) {
+                $counter ++;
+                $CL = $MovieRepository->getCoverLinkSeries(array_values($s)[3]);
+                echo '<a href="playmovie?n=' . array_values($m)[3] . '"><img id="Movie_'.$counter.'" src=' . $CL . ' "/></a>';;
+
+            }}
+
+            ?>
+
+        </div>
+		<div id="Background_Search_Shadow_bj">
+			<div id="Component_31__1" class="Component_31___1">
+
+				<div id="See_all_bm">
+					<div id="See_all_bn">
+						</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="Background_Search_Shadow_bo" class="Background_Search_Shadow">
+		<svg class="Background_Search_bp">
+			<rect id="Background_Search_bp" rx="33" ry="33" x="0" y="0" width="250" height="66">
+			</rect>
+
+		</svg>
+
+		<div id="See_all_bq">
+			<div id="See_all_br">
+
+
+                <?php
+
+                echo '<a href="searchResults?title='.$_POST['title'].'"><button>SEARCH</button>';
+                ?>
+			</div>
+		</div>
+	</div>
+
+	<img id="w7tyrm8khve61" src="public/img/w7tyrm8khve61.png" srcset="public/img/w7tyrm8khve61.png 1x, public/img/w7tyrm8khve61@2x.png 2x">
+
+
+                </form>
+                    <div id="See_all_cm">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

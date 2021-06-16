@@ -1,7 +1,7 @@
 <?php
 
 interface MediaFactory{
-    public function create($title, $description, $season, $episode, $fileLink, $coverLink, $year, $category): MediaObject;
+    public function create($title, $code, $fileLink, $coverLink, $year, $category): MediaObject;
 }
 interface MediaObject
 {
@@ -136,54 +136,21 @@ class Movie implements MediaObject{
 }
 class Series implements MediaObject
 {
+
+    private $title;
+    private $code;
+    private $fileLink;
+    private $coverLink;
+    private $releaseDate;
+    private $category;
     /**
      * Series constructor.
      * @param $title
-     * @param $description
-     * @param $season
-     * @param $episode
+     * @param $code
      * @param $fileLink
      * @param $coverLink
      * @param $year
      * @param $category
-     */
-    public function __construct($title, $description, $season, $episode, $fileLink, $coverLink, $year, $category)
-    {
-        $this->title = $title;
-        $this->description = $description;
-        $this->season = $season;
-        $this->episode = $episode;
-        $this->fileLink = $fileLink;
-        $this->coverLink = $coverLink;
-        $this->year = $year;
-        $this->category = $category;
-    }
-
-
-    public function getType(): string
-    {
-        return "Series";
-    }
-};
-class MovieFactory implements MediaFactory{
-
-    public function create($title, $description, $season, $episode, $fileLink, $coverLink, $year, $category): MediaObject{
-        return new Movie($title, $description, $fileLink, $coverLink, $year, $category);
-
-    }
-}
-class SeriesFactory implements MediaFactory{
-
-    private $title;
-    private $description;
-    private $season;
-    private $episode;
-    private $fileLink;
-    private $coverLink;
-    private $year;
-    private $category;
-    /**
-     * @return mixed
      */
     public function getTitle()
     {
@@ -201,49 +168,22 @@ class SeriesFactory implements MediaFactory{
     /**
      * @return mixed
      */
-    public function getDescription()
-    {
-        return $this->description;
-    }
 
-    /**
-     * @param mixed $description
-     */
-    public function setDescription($description): void
-    {
-        $this->description = $description;
-    }
 
     /**
      * @return mixed
      */
-    public function getSeason()
+    public function getCode()
     {
-        return $this->season;
+        return $this->code;
     }
 
     /**
-     * @param mixed $season
+     * @param mixed $code
      */
-    public function setSeason($season): void
+    public function setCode($code): void
     {
-        $this->season = $season;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getEpisode()
-    {
-        return $this->episode;
-    }
-
-    /**
-     * @param mixed $episode
-     */
-    public function setEpisode($episode): void
-    {
-        $this->episode = $episode;
+        $this->code = $code;
     }
 
     /**
@@ -281,17 +221,17 @@ class SeriesFactory implements MediaFactory{
     /**
      * @return mixed
      */
-    public function getYear()
+    public function getReleaseDate()
     {
-        return $this->year;
+        return $this->releaseDate;
     }
 
     /**
-     * @param mixed $year
+     * @param mixed $releaseDate
      */
-    public function setYear($year): void
+    public function setReleaseDate($releaseDate): void
     {
-        $this->year = $year;
+        $this->releaseDate = $releaseDate;
     }
 
     /**
@@ -310,9 +250,44 @@ class SeriesFactory implements MediaFactory{
         $this->category = $category;
     }
 
+    public function __construct($title, $code, $fileLink, $coverLink, $year, $category)
+    {
+        $this->title = $title;
+        $this->code = $code;
+        $this->fileLink = $fileLink;
+        $this->coverLink = $coverLink;
+        $this->releaseDate = $year;
+        $this->category = $category;
+    }
 
-    public function create($title, $description, $season, $episode, $fileLink, $coverLink, $year, $category): MediaObject{
-        return new Series($title, $description, $season, $episode, $fileLink, $coverLink, $year, $category);
+
+    public function getType(): string
+    {
+        return "Series";
+    }
+};
+class MovieFactory implements MediaFactory{
+
+    public function create($title, $code, $fileLink, $coverLink, $year, $category): MediaObject{
+        return new Movie($title, $code, $fileLink, $coverLink, $year, $category);
+
+    }
+}
+class SeriesFactory implements MediaFactory{
+
+    private $title;
+    private $code;
+    private $fileLink;
+    private $coverLink;
+    private $year;
+    private $category;
+    /**
+     * @return mixed
+     */
+
+
+    public function create($title, $code, $fileLink, $coverLink, $year, $category): MediaObject{
+        return new Series($title, $code, $fileLink, $coverLink, $year, $category);
 
     }
 }

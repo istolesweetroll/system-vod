@@ -4,11 +4,10 @@
 <meta charset="utf-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>log in</title>
 <style>
 
 	:root {
-		--web-view-ids: Sign_up_screen__1;
+		--web-view-ids: addmovie;
 	}
 	input {
     background-color:	rgba(49,28,105,1);
@@ -22,36 +21,53 @@
 		box-sizing: border-box;
 		border: none;
 	}
-	button{
-		left: 0px;
-		top: 4px;
+      	#Component_31__1 {
 		position: absolute;
+		width: 546px;
+		height: 44px;
+		left: 0px;
+		top: 0px;
 		overflow: visible;
-		width: 100px;
-		white-space: nowrap;
-		text-align: center;
-		font-family: Fira Sans;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 21px;
+	}
+	        button{
+            left: 0px;
+            top: 4px;
+            position: absolute;
+            overflow: visible;
+            width: 100px;
+            white-space: nowrap;
+            text-align: center;
+            font-family: Fira Sans;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 21px;
 
+        }
+
+	#w7tyrm8khve61 {
+		position: absolute;
+		width: 552px;
+		height: 719px;
+		left: 860px;
+		top: 129px;
+		overflow: visible;
 	}
 
-	#Sign_up_screen__1 {
+	#Add_movie_screen {
 		position: absolute;
 		width: 1440px;
 		height: 880px;
 		background-color: rgba(148,183,156,1);
 		overflow: hidden;
-		--web-view-name: Sign up screen – 1;
-		--web-view-id: Sign_up_screen__1;
+		--web-view-name: Add movie screen;
+		--web-view-id: Add_movie_screen;
 		--web-scale-on-resize: true;
 		--web-enable-deep-linking: true;
 	}
-	#Background_d {
+	#Background {
 		fill: rgba(156,185,157,1);
 	}
-	.Background_d {
+	.Background {
 		position: absolute;
 		overflow: visible;
 		width: 1440px;
@@ -59,7 +75,7 @@
 		left: 0px;
 		top: 0px;
 	}
-	#Top_d {
+	#Top {
 		position: absolute;
 		width: 1440px;
 		height: 100px;
@@ -67,7 +83,7 @@
 		top: 0px;
 		overflow: visible;
 	}
-	#Header_d {
+	#Header {
 		position: absolute;
 		width: 1440px;
 		height: 100px;
@@ -75,7 +91,7 @@
 		top: 0px;
 		overflow: visible;
 	}
-	#Background_Shaodw_d {
+	#Background_Shaodw {
 		position: absolute;
 		width: 1440px;
 		height: 100px;
@@ -83,11 +99,10 @@
 		top: 0px;
 		overflow: visible;
 	}
-
-	#Background_Header_ea {
+	#Background_Header {
 		fill: rgba(49,28,105,1);
 	}
-	.Background_Header_ea {
+	.Background_Header {
 		filter: drop-shadow(0px 8px 16px rgba(0, 0, 0, 0.549));
 		position: absolute;
 		overflow: visible;
@@ -97,7 +112,7 @@
 		top: 0px;
 	}
 
-	#Component_68__19 {
+	#Component_68__23 {
 		position: absolute;
 		width: 486px;
 		height: 26px;
@@ -105,7 +120,7 @@
 		top: 38px;
 		overflow: visible;
 	}
-	#Home_Movies_Series_R_eq {
+	#Home_Movies_Series_R {
 		left: 0px;
 		top: 0px;
 		position: absolute;
@@ -119,7 +134,7 @@
 		font-size: 21px;
 		color: rgba(255,255,255,0.353);
 	}
-	#Home_Movies_Series_R_er {
+	#Home_Movies_Series_R_ {
 		left: 224px;
 		top: 0px;
 		position: absolute;
@@ -137,7 +152,7 @@
 		font-size: 21px;
 		color: rgba(255,255,255,0.353);
 	}
-	#Home_Movies_Series_R_es {
+	#Home_Movies_Series_R_ba {
 		left: 338px;
 		top: 0px;
 		position: absolute;
@@ -155,7 +170,7 @@
 		font-size: 21px;
 		color: rgba(255,255,255,0.353);
 	}
-	#Home_Movies_Series_R_et {
+	#Home_Movies_Series_R_bb {
 		left: 107px;
 		top: 0px;
 		position: absolute;
@@ -169,17 +184,17 @@
 		font-size: 21px;
 		color: rgba(255,255,255,0.353);
 	}
-	#Text_eu {
+	#Text {
 		position: absolute;
 		width: 300px;
-		height: 141px;
-		left: 24px;
-		top: 370px;
+		height: 142px;
+		left: 7px;
+		top: 143px;
 		overflow: visible;
 	}
-	#Avengers__Endgame_ev {
+	#Avengers__Endgame {
 		left: 0px;
-		top: 98px;
+		top: 99px;
 		position: absolute;
 		overflow: visible;
 		width: 301px;
@@ -191,7 +206,7 @@
 		font-size: 30px;
 		color: rgba(255,255,255,1);
 	}
-	#Avengers__Endgame_ew {
+	#Avengers__Endgame_bd {
 		left: 0px;
 		top: 0px;
 		position: absolute;
@@ -205,15 +220,15 @@
 		font-size: 30px;
 		color: rgba(255,255,255,1);
 	}
-	#Component_32__1 {
+	#Component_32__2 {
 		position: absolute;
 		width: 546px;
 		height: 144px;
-		left: 203px;
-		top: 368px;
+		left: 265px;
+		top: 144px;
 		overflow: visible;
 	}
-	#Background_Search_Shadow_ey {
+	#Background_Search_Shadow_bf {
 		position: absolute;
 		width: 546px;
 		height: 44px;
@@ -221,7 +236,7 @@
 		top: 0px;
 		overflow: visible;
 	}
-	#Background_Search_ez {
+	#Background_Search_bg {
 		fill: rgba(49,28,105,1);
 		stroke: rgba(255,255,255,1);
 		stroke-width: 6px;
@@ -230,7 +245,7 @@
 		stroke-miterlimit: 4;
 		shape-rendering: auto;
 	}
-	.Background_Search_ez {
+	.Background_Search_bg {
 		position: absolute;
 		overflow: visible;
 		width: 552px;
@@ -238,20 +253,20 @@
 		left: 0px;
 		top: 0px;
 	}
-	#See_all_e {
+	#See_all {
 		position: absolute;
-		width: 130px;
+		width: 83px;
 		height: 18px;
-		left: 12px;
+		left: 11px;
 		top: 13px;
 		overflow: visible;
 	}
-	#See_all_fa {
+	#See_all_bi {
 		left: 0px;
 		top: 0px;
 		position: absolute;
 		overflow: visible;
-		width: 131px;
+		width: 84px;
 		white-space: nowrap;
 		line-height: 18px;
 		margin-top: -1.5px;
@@ -263,7 +278,7 @@
 		color: rgba(255,255,255,1);
 		text-transform: uppercase;
 	}
-	#Background_Search_Shadow_e {
+	#Background_Search_Shadow_bj {
 		position: absolute;
 		width: 546px;
 		height: 44px;
@@ -279,37 +294,21 @@
 		top: 0px;
 		overflow: visible;
 	}
-	#Background_Search_e {
-		fill: rgba(49,28,105,1);
-		stroke: rgba(255,255,255,1);
-		stroke-width: 6px;
-		stroke-linejoin: miter;
-		stroke-linecap: butt;
-		stroke-miterlimit: 4;
-		shape-rendering: auto;
-	}
-	.Background_Search_e {
+
+	#See_all_bm {
 		position: absolute;
-		overflow: visible;
-		width: 552px;
-		height: 50px;
-		left: 0px;
-		top: 0px;
-	}
-	#See_all_fb {
-		position: absolute;
-		width: 131px;
+		width: 136px;
 		height: 18px;
-		left: 12px;
-		top: 13px;
+		left: 8px;
+		top: 14px;
 		overflow: visible;
 	}
-	#See_all_fd {
+	#See_all_bn {
 		left: 0px;
 		top: 0px;
 		position: absolute;
 		overflow: visible;
-		width: 132px;
+		width: 137px;
 		white-space: nowrap;
 		line-height: 18px;
 		margin-top: -1.5px;
@@ -321,24 +320,7 @@
 		color: rgba(255,255,255,1);
 		text-transform: uppercase;
 	}
-	#See_all_fd {
-		left: 0px;
-		top: 0px;
-		position: absolute;
-		overflow: visible;
-		width: 132px;
-		white-space: nowrap;
-		line-height: 18px;
-		margin-top: -1.5px;
-		text-align: right;
-		font-family: Fira Sans;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 15px;
-		color: rgba(255,255,255,1);
-		text-transform: uppercase;
-	}
-	#Background_Search_Shadow_fa {
+	#Background_Search_Shadow_bo {
 		position: absolute;
 		width: 250px;
 		height: 66px;
@@ -346,7 +328,7 @@
 		top: 670px;
 		overflow: visible;
 	}
-	#Background_Search_fa {
+	#Background_Search_bp {
 		fill: rgba(49,28,105,1);
 		stroke: rgba(255,255,255,1);
 		stroke-width: 6px;
@@ -355,15 +337,15 @@
 		stroke-miterlimit: 4;
 		shape-rendering: auto;
 	}
-	.Background_Search_fa {
+	.Background_Search_bp {
 		position: absolute;
 		overflow: visible;
 		width: 256px;
 		height: 72px;
-		left: 0px;
-		top: 0px;
+		left: 90px;
+		top: -460px;
 	}
-	#See_all_fe {
+	#See_all_bq {
 		position: absolute;
 		width: 90px;
 		height: 36px;
@@ -371,8 +353,22 @@
 		top: 15px;
 		overflow: visible;
 	}
-
-	#w7tyrm8khve61_fc {
+	#See_all_br {
+		left: 90px;
+		top: -460px;
+		position: absolute;
+		overflow: visible;
+		width: 91px;
+		white-space: nowrap;
+		text-align: right;
+		font-family: Fira Sans;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 30px;
+		color: rgba(255,255,255,1);
+		text-transform: uppercase;
+	}
+	#w7tyrm8khve61 {
 		position: absolute;
 		width: 552px;
 		height: 719px;
@@ -380,58 +376,13 @@
 		top: 129px;
 		overflow: visible;
 	}
-	#Rectangle_2_fd {
-		fill: rgba(255,255,255,1);
-		stroke: rgba(112,112,112,1);
-		stroke-width: 1px;
-		stroke-linejoin: miter;
-		stroke-linecap: butt;
-		stroke-miterlimit: 4;
-		shape-rendering: auto;
-	}
-	.Rectangle_2_fd {
-		position: absolute;
-		overflow: visible;
-		width: 1px;
-		height: 10px;
-		left: 1272px;
-		top: 712px;
-	}
-	#See_all_fg {
-		position: absolute;
-		width: 145px;
-		height: 42px;
-		left: 14px;
-		top: 794px;
-		overflow: visible;
-	}
-	#See_all_fh {
+
+	#See_all_cm {
 		left: 0px;
 		top: 0px;
 		position: absolute;
 		overflow: visible;
-		width: 146px;
-		white-space: nowrap;
-		--web-animation: fadein undefineds undefined;
-		--web-action-type: page;
-		--web-action-target: signup;
-		cursor: pointer;
-		line-height: 18px;
-		margin-top: -1.5px;
-		text-align: right;
-		font-family: Fira Sans;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 15px;
-		color: rgba(255,255,255,1);
-		text-transform: uppercase;
-	}
-	#See_all_fi {
-		left: 0px;
-		top: 24px;
-		position: absolute;
-		overflow: visible;
-		width: 140px;
+		width: 82px;
 		white-space: nowrap;
 		line-height: 18px;
 		margin-top: -1.5px;
@@ -443,124 +394,121 @@
 		color: rgba(255,255,255,1);
 		text-transform: uppercase;
 	}
-
-	#Component_31__1 {
-		position: absolute;
-		width: 546px;
-		height: 44px;
-		left: 0px;
-		top: 0px;
-		overflow: visible;
-	}
-
 </style>
+<title>Search screen</title>
+
 </head>
-<body>
-
-<div class="messages">
-
-<?php
-if(isset($messages)){
-	foreach($messages as $message) {
-		echo $message;
-	}
-}
-?>
-</div>
-<div id="Sign_up_screen__1">
-	<svg class="Background_d">
-		<rect id="Background_d" rx="0" ry="0" x="0" y="0" width="1440" height="880">
+<form action = 'searchResults'>
+<div id="Add_movie_screen">
+	<svg class="Background">
+		<rect id="Background" rx="0" ry="0" x="0" y="0" width="1440" height="880">
 		</rect>
 	</svg>
-	<div id="Top_d">
-		<div id="Header_d">
-			<div id="Background_Shaodw_d">
-				<svg class="Background_Header_ea">
-					<rect id="Background_Header_ea" rx="0" ry="0" x="0" y="0" width="1440" height="100">
+	<div id="Top">
+		<div id="Header">
+			<div id="Background_Shaodw">
+				<svg class="Background_Header">
+					<rect id="Background_Header" rx="0" ry="0" x="0" y="0" width="1440" height="100">
 					</rect>
 				</svg>
 			</div>
 
-			</div>
 
-			</div>
 
-			<div id="Component_68__19" class="Component_68___19">
-			<div id="Home_Movies_Series_R_eq">
-                <A class=wsnextlink1 href="movies" style="color:rgba(255,255,255,0.345)"> Home </A>
+						</div>
+			<div id="Component_68__23" class="Component_68___23">
+				<div id="Home_Movies_Series_R">
+                    <A class=wsnextlink1 href="movies" style="color:rgba(255,255,255,0.345)"> Home </A>
 				</div>
-				<div id="Home_Movies_Series_R_er">
-                    <A class=wsnextlink1 href="series" style="color:rgba(255,255,255,0.345)"> Series </A>
+				<div  id="Home_Movies_Series_R_">
+					<A class=wsnextlink1 href="series" style="color:rgba(255,255,255,0.345)"> Series </A>
 				</div>
-				<div id="Home_Movies_Series_R_es">
+				<div onclick="application.goToTargetView(event)" id="Home_Movies_Series_R_ba">
                     <A class=wsnextlink1 href="recentlyadded" style="color:rgba(255,255,255,0.345)"> Recently added </A>
-				</div>
-				<div id="Home_Movies_Series_R_et">
+
+                </div>
+				<div id="Home_Movies_Series_R_bb">
                     <A class=wsnextlink1 href="movies" style="color:rgba(255,255,255,0.345)"> Movies </A>
-				</div>
+
+                </div>
 			</div>
 		</div>
 	</div>
-	<div id="Text_eu">
-		<div id="Avengers__Endgame_ev">
-			<span>PASSWORD:</span>
+	<div id="Text">
+
+		<div id="Avengers__Endgame_bd">
+
+			<span>SEARCH BY TITLE:</span>
+
 		</div>
-		<div id="Avengers__Endgame_ew">
-			<span>USERNAME:</span>
-		</div>
+
+
 	</div>
-	<div id="Component_32__1" class="Component_32___1">
-		<div id="Background_Search_Shadow_ey">
-			<svg class="Background_Search_ez">
-				<rect id="Background_Search_ez" rx="6" ry="6" x="0" y="0" width="546" height="44">
+	<div id="Component_32__2" class="Component_32___2">
+
+		<div id="Background_Search_Shadow_bf">
+
+			<svg class="Background_Search_bg">
+				<rect id="Background_Search_bg" rx="6" ry="6" x="0" y="0" width="546" height="44">
 				</rect>
 			</svg>
-            <form class="login1" action="login" method="post">
-            <div id="See_all_e">
-				<div id="See_all_fa">
-					<input name="username" type="text" required="required" placeholder="enter username">
+
+			<div id="See_all">
+<form class="search" action="searchResults" method="post">
+				<div id="See_all_bi">
+					<input name="title" type="text" placeholder="enter title">
+
 				</div>
+
 			</div>
+
 		</div>
-		<div id="Background_Search_Shadow_e">
+        <div id="Movies">
+
+
+
+
+        </div>
+		<div id="Background_Search_Shadow_bj">
 			<div id="Component_31__1" class="Component_31___1">
-				<svg class="Background_Search_e">
-					<rect id="Background_Search_e" rx="6" ry="6" x="0" y="0" width="546" height="44">
-					</rect>
-				</svg>
-				<div id="See_all_fb">
-					<div id="See_all_fd">
-						<input name="password" type="password"  required="required" placeholder="enter password">
-					</div>
 
+				<div id="See_all_bm">
+					<div id="See_all_bn">
+						</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div id="Background_Search_Shadow_fa" class="Background_Search_Shadow">
-		<svg class="Background_Search_fa">
-			<rect id="Background_Search_fa" rx="33" ry="33" x="0" y="0" width="250" height="66">
+
+	<div id="Background_Search_Shadow_bo" class="Background_Search_Shadow">
+		<svg class="Background_Search_bp">
+			<rect id="Background_Search_bp" rx="33" ry="33" x="0" y="0" width="250" height="66">
 			</rect>
+
 		</svg>
-		<div id="See_all_fe">
-            <button type = "submit" >LOG IN</button>
-            </form>
+
+		<div id="See_all_bq">
+			<div id="See_all_br">
+
+                <?php
+
+                $title=$_POST['title'];
+                    echo '<a href="searchResults?title='.$title.'"><button>SEARCH</button>';
+
+                ?>
+
+			</div>
 		</div>
 	</div>
-	<img id="w7tyrm8khve61_fc" src="public/img/w7tyrm8khve61_fc.png" srcset="public/img/w7tyrm8khve61_fc.png 1x, public/img/w7tyrm8khve61_fc@2x.png 2x">
+</form>
+	<img id="w7tyrm8khve61" src="public/img/w7tyrm8khve61.png" srcset="public/img/w7tyrm8khve61.png 1x, public/img/w7tyrm8khve61@2x.png 2x">
 
-	<svg class="Rectangle_2_fd">
-		<rect id="Rectangle_2_fd" rx="0" ry="0" x="0" y="0" width="1" height="10">
-		</rect>
-	</svg>
-	<div id="See_all_fg">
-		<div  id="See_all_fh">
-            <P>
-                <A class=wsnextlink1 href="signup">Not a user? Sign up!</A>
-            </P>
-		</div>
-		<div id="See_all_fi">
-			<span>Forgot password?</span>
+
+                </form>
+                    <div id="See_all_cm">
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 </div>

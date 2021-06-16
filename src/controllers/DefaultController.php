@@ -4,7 +4,15 @@ require_once 'AppController.php';
 
 class DefaultController extends AppController {
 
+    public function search()
+    {
+        $this->render('search');
+    }
     public function index()
+    {
+        $this->render('movies');
+    }
+    public function movies()
     {
         $this->render('movies');
     }
@@ -33,5 +41,12 @@ class DefaultController extends AppController {
     {
         $this->render('addmovie');
     }
-  
+    public function addseries()
+    {
+        $this->render('addseries');
+    }
+    public function searchResults()
+    {
+        $this->render('searchResults');
+    }
 }
