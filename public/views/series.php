@@ -121,7 +121,7 @@
         width: 307.5px;
         height: 313px;
         left: 0px;
-        top: 163px;
+        top: 200px;
         overflow: visible;
         --web-animation: fadein 0.3s ease-out;
         --web-action-type: page;
@@ -134,7 +134,7 @@
         width: 307.5px;
         height: 313px;
         left: 327.5px;
-        top: 163px;
+        top: 200px;
         overflow: visible;
         --web-animation: fadein 0.3s ease-out;
         --web-action-type: page;
@@ -147,7 +147,7 @@
         width: 307.5px;
         height: 313px;
         left: 654px;
-        top: 163px;
+        top: 200px;
         overflow: visible;
         --web-animation: fadein 0.3s ease-out;
         --web-action-type: page;
@@ -160,7 +160,7 @@
         width: 307.5px;
         height: 313px;
         left: 981px;
-        top: 163px;
+        top: 200px;
         overflow: visible;
         --web-animation: fadein 0.3s ease-out;
         --web-action-type: page;
@@ -174,7 +174,7 @@
         width: 307.5px;
         height: 313px;
         left: 0px;
-        top: 163px;
+        top: 550px;
         overflow: visible;
         --web-animation: fadein 0.3s ease-out;
         --web-action-type: page;
@@ -187,7 +187,7 @@
         width: 307.5px;
         height: 313px;
         left: 327.5px;
-        top: 163px;
+        top: 550px;
         overflow: visible;
         --web-animation: fadein 0.3s ease-out;
         --web-action-type: page;
@@ -200,7 +200,7 @@
         width: 307.5px;
         height: 313px;
         left: 654px;
-        top: 163px;
+        top: 550px;
         overflow: visible;
         --web-animation: fadein 0.3s ease-out;
         --web-action-type: page;
@@ -213,7 +213,7 @@
         width: 307.5px;
         height: 313px;
         left: 981px;
-        top: 163px;
+        top: 550px;
         overflow: visible;
         --web-animation: fadein 0.3s ease-out;
         --web-action-type: page;
@@ -692,50 +692,13 @@
             <?php
             $MovieRepository = new MovieRepository();
             $n= $MovieRepository ->getMaxSeriesIndex();
-            if($n >= 1){
-                $CL = $MovieRepository -> getCoverLinkSeries(1);
-                echo'<a href="playmovie?n=1"><img id="Movie_1" src='.$CL.' "/></a>';
+
+            foreach (range(min(12,$n), 1) as $number) {
+                $CL = $MovieRepository->getCoverLinkSeries($number);
+                echo '<a href="playmovie?n=' .$number. '"><img id="Movie_'.$number.'" src=' . $CL . ' "/></a>';
+
             }
-            if($n >= 2){
-                $CL = $MovieRepository -> getCoverLinkSeries(2);
-                echo'<a href="playmovie?n=2"&><img id="Movie_2" src='.$CL.' "/></a>';  }
-            if($n >= 3){
-                $CL = $MovieRepository -> getCoverLinkSeries(3);
-                echo'<a href="playmovie?n=3"><img id="Movie_3" src='.$CL.' "/></a>'; }
-            if($n >= 4){
-                $CL = $MovieRepository -> getCoverLinkSeries(4);
-                echo'<a href="playmovie?n=4"><img id="Movie_4" src='.$CL.' "/></a>';;
-            }
-            if($n >= 5){
-                $CL = $MovieRepository -> getCoverLinkSeries(5);
-                echo'<a href="playmovie?n=5"><img id="Movie_5" src='.$CL.' "/></a>';
-            }
-            if($n >= 6){
-                $CL = $MovieRepository -> getCoverLinkSeries(6);
-                echo'<a href="playmovie?n=6"><img id="Movie_6" src='.$CL.' "/></a>';
-            }
-            if($n >= 7){
-                $CL = $MovieRepository -> getCoverLinkSeries(7);
-                echo'<a href="playmovie?n=7"><img id="Movie_7" src='.$CL.' "/></a>'; }
-            if($n >= 8){
-                $CL = $MovieRepository -> getCoverLinkSeries(8);
-                echo'<a href="playmovie?n=8"><img id="Movie_8" src='.$CL.' "/></a>'; }
-            if($n >= 9){
-                $CL = $MovieRepository -> getCoverLinkSeries(9);
-                echo'<a href="playmovie?n=9"><img id="Movie_9" src='.$CL.' "/></a>';
-            }
-            if($n >= 10){
-                $CL = $MovieRepository -> getCoverLinkSeries(10);
-                echo'<a href="playmovie?n=10"><img id="Movie_10" src='.$CL.' "/></a>';
-            }
-            if($n >= 11){
-                $CL = $MovieRepository -> getCoverLinkSeries(11);
-                echo'<a href="playmovie?n=11"><img id="Movie_11" src='.$CL.' "/></a>';
-            }
-            if($n >= 12){
-                $CL = $MovieRepository -> getCoverLinkSeries(12);
-                echo'<a href="playmovie?n=12"><img id="Movie_12" src='.$CL.' "/></a>';
-            }
+
             ?>
 		</div>
 		<div id="Title">
@@ -767,7 +730,7 @@
 				</svg>
 			</div>
 			<div id="Movie_Center" class="Movie_Center">
-				<img id="Background_Movie_Center" src="public/img/Background_Movie_Center.png" srcset="public/img/Background_Movie_Center.png 1x, public/img/Background_Movie_Center@2x.png 2x">
+				<img id="Background_Movie_Center" src="https://i.ytimg.com/vi/bFK037QL-_M/maxresdefault.jpg">
 					
 				<svg class="Filter_Movie_Center_bj">
 					<linearGradient id="Filter_Movie_Center_bj" spreadMethod="pad" x1="0.5" x2="0.5" y1="0" y2="1">
@@ -778,12 +741,7 @@
 					</rect>
 				</svg>
 				<div id="Text">
-					<div id="After_the_devastatin">
-						<span>Blends the style of classic sitcoms with the MCU, in which Wanda Maximoff and Vision - two super-powered beings living their ideal suburban lives - begin to suspect that everything is not as it seems.</span>
-					</div>
-					<div id="Avengers__Endgame">
-						<span>WandaVision</span>
-					</div>
+
 				</div>
 			</div>
 			<div id="Movie_Right">

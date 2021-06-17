@@ -232,28 +232,160 @@
 		top: 0px;
 		overflow: visible;
 	}
-	#Movie_1 {
-		filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.098));
-		position: absolute;
-		width: 307.5px;
-		height: 313px;
-		left: 0px;
-		top: 0px;
-		overflow: visible;
-		--web-animation: fadein 0.3s ease-out;
-		--web-action-type: page;
-		--web-action-target: playmovie;
-		cursor: pointer;
-	}
-	#Movie_2_ {
-		filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.098));
-		position: absolute;
-		width: 307.5px;
-		height: 313px;
-		left: 655px;
-		top: 0px;
-		overflow: visible;
-	}
+    #Movie_2 {
+        filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.098));
+        position: absolute;
+        width: 307.5px;
+        height: 313px;
+        left: 327.5px;
+        top: -150px;
+        overflow: visible;
+    }
+
+    #Movie_1 {
+        filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.098));
+        position: absolute;
+        width: 307.5px;
+        height:313px;
+        left: 0px;
+        top: -150px;
+        overflow: visible;
+        --web-animation: fadein 0.3s ease-out;
+        --web-action-type: page;
+        --web-action-target: playmovie;
+        cursor: pointer;
+    }
+    #Movie_3 {
+        filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.098));
+        position: absolute;
+        width: 307.5px;
+        height: 313px;
+        left: 654px;
+        top: -150px;
+        overflow: visible;
+        --web-animation: fadein 0.3s ease-out;
+        --web-action-type: page;
+        --web-action-target: playmovie;
+        cursor: pointer;
+    }
+    #Movie_4 {
+        filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.098));
+        position: absolute;
+        width: 307.5px;
+        height: 313px;
+        left: 981px;
+        top: -150px;
+        overflow: visible;
+        --web-animation: fadein 0.3s ease-out;
+        --web-action-type: page;
+        --web-action-target: playmovie;
+        cursor: pointer;
+    }
+    #Movie_5 {
+        filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.098));
+        position: absolute;
+        width: 307.5px;
+        height: 313px;
+        left: 0px;
+        top: 163px;
+        overflow: visible;
+        --web-animation: fadein 0.3s ease-out;
+        --web-action-type: page;
+        --web-action-target: playmovie;
+        cursor: pointer;
+    }
+    #Movie_6 {
+        filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.098));
+        position: absolute;
+        width: 307.5px;
+        height: 313px;
+        left: 327.5px;
+        top: 163px;
+        overflow: visible;
+        --web-animation: fadein 0.3s ease-out;
+        --web-action-type: page;
+        --web-action-target: playmovie;
+        cursor: pointer;
+    }
+    #Movie_7 {
+        filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.098));
+        position: absolute;
+        width: 307.5px;
+        height: 313px;
+        left: 654px;
+        top: 163px;
+        overflow: visible;
+        --web-animation: fadein 0.3s ease-out;
+        --web-action-type: page;
+        --web-action-target: playmovie;
+        cursor: pointer;
+    }
+    #Movie_8 {
+        filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.098));
+        position: absolute;
+        width: 307.5px;
+        height: 313px;
+        left: 981px;
+        top: 163px;
+        overflow: visible;
+        --web-animation: fadein 0.3s ease-out;
+        --web-action-type: page;
+        --web-action-target: playmovie;
+        cursor: pointer;
+    }
+
+    #Movie_9 {
+        filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.098));
+        position: absolute;
+        width: 307.5px;
+        height: 313px;
+        left: 0px;
+        top: 163px;
+        overflow: visible;
+        --web-animation: fadein 0.3s ease-out;
+        --web-action-type: page;
+        --web-action-target: playmovie;
+        cursor: pointer;
+    }
+    #Movie_10 {
+        filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.098));
+        position: absolute;
+        width: 307.5px;
+        height: 313px;
+        left: 327.5px;
+        top: 163px;
+        overflow: visible;
+        --web-animation: fadein 0.3s ease-out;
+        --web-action-type: page;
+        --web-action-target: playmovie;
+        cursor: pointer;
+    }
+    #Movie_11 {
+        filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.098));
+        position: absolute;
+        width: 307.5px;
+        height: 313px;
+        left: 654px;
+        top: 163px;
+        overflow: visible;
+        --web-animation: fadein 0.3s ease-out;
+        --web-action-type: page;
+        --web-action-target: playmovie;
+        cursor: pointer;
+    }
+    #Movie_12 {
+        filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.098));
+        position: absolute;
+        width: 307.5px;
+        height: 313px;
+        left: 981px;
+        top: 163px;
+        overflow: visible;
+        --web-animation: fadein 0.3s ease-out;
+        --web-action-type: page;
+        --web-action-target: playmovie;
+        cursor: pointer;
+    }
 	#Movie_2_ba {
 		filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.098));
 		position: absolute;
@@ -572,14 +704,28 @@
 	</div>
 	<div id="Popular">
 		<div id="Movies">
-			<img id="Movie_2" src="public/img/Movie_2.png" srcset="public/img/Movie_2.png 1x, public/img/Movie_2@2x.png 2x">
-				
-			<img onclick="application.goToTargetView(event)" id="Movie_1" src="public/img/Movie_1.png" srcset="public/img/Movie_1.png 1x, public/img/Movie_1@2x.png 2x">
-				
-			<img id="Movie_2_" src="public/img/Movie_2_.png" srcset="public/img/Movie_2_.png 1x, public/img/Movie_2_@2x.png 2x">
-				
-			<img id="Movie_2_ba" src="public/img/Movie_2_ba.png" srcset="public/img/Movie_2_ba.png 1x, public/img/Movie_2_ba@2x.png 2x">
-				
+            <div id="Movies">
+
+                <?php
+                $MovieRepository = new MovieRepository();
+                $m = $MovieRepository->getMaxMovieIndex();
+                $s = $MovieRepository->getMaxSeriesIndex();
+
+                $counter = 1;
+                foreach (range(min(6,$m), 1) as $number) {
+                    $CL = $MovieRepository->getCoverLinkMovie($number);
+                    echo '<a href="playmovie?n=' .$number. '"><img id="Movie_'.$number.'" src=' . $CL . ' "/></a>';
+                    $counter++;
+                }
+                foreach (range(min(6,$s), 1) as $number) {
+                    $CL = $MovieRepository->getCoverLinkSeries($number);
+                    echo '<a href="playmovie?n=' .$number. '"><img id="Movie_'.$counter.'" src=' . $CL . ' "/></a>';
+                }
+
+
+                ?>
+
+            </div>
 		</div>
 		<div id="Title">
 			<div id="See_all">
