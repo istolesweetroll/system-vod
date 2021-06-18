@@ -41,6 +41,10 @@ class DefaultController extends AppController {
     {
         $this->render('addmovie');
     }
+    public function admin()
+    {
+        $this->render('admin');
+    }
     public function addseries()
     {
         $this->render('addseries');

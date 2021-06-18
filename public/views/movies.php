@@ -540,6 +540,15 @@
 		font-size: 21px;
 		color: rgba(255,255,255,0.353);
 	}
+    #Admin{
+        left: 550px;
+        top: 5px;
+        position: absolute;
+        overflow: visible;
+        width: 200px;
+        white-space: nowrap;
+
+    }
 	#Home_Movies_Series_R_cf {
 		left: 338px;
 		top: 0px;
@@ -689,6 +698,15 @@
                 <P>
                  <A class=wsnextlink1 href="recentlyadded" style="color:rgba(255,255,255,0.345)"> Recently added </A>
                 </P>
+
+                </div>
+                <div id="Admin">
+                    <?php
+                    if($_COOKIE["isAdmin"] == 1) {
+                        echo '<A class=wsnextlink1 href="admin" style="color:rgba(255,255,255,0.345)"> + </A>';
+                    }
+                    ?>
+
 
                 </div>
 			</div>

@@ -220,6 +220,15 @@
         --web-action-target: playmovie;
         cursor: pointer;
     }
+    #Admin{
+        left: 550px;
+        top: 5px;
+        position: absolute;
+        overflow: visible;
+        width: 200px;
+        white-space: nowrap;
+
+    }
 	#Top {
 		position: absolute;
 		width: 1440px;
@@ -683,6 +692,15 @@
 				<div  id="Home_Movies_Series_R_z"><A class=wsnextlink1 href="movies" style="color:rgba(255,255,255,0.345)"> Movies </A>
 
 				</div>
+                <div id="Admin">
+                    <?php
+                    if($_COOKIE["isAdmin"] == 1) {
+                        echo '<A class=wsnextlink1 href="admin" style="color:rgba(255,255,255,0.345)"> + </A>';
+                    }
+                    ?>
+
+
+                </div>
 			</div>
 		</div>
 	</div>

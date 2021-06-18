@@ -189,6 +189,7 @@
 		font-size: 21px;
 		color: rgba(121,108,158,1);
 	}
+
 	#Home_Movies_Series_R_z {
 		left: 109px;
 		top: 0px;
@@ -287,7 +288,7 @@
         width: 307.5px;
         height: 313px;
         left: 0px;
-        top: 163px;
+        top: 200px;
         overflow: visible;
         --web-animation: fadein 0.3s ease-out;
         --web-action-type: page;
@@ -300,7 +301,7 @@
         width: 307.5px;
         height: 313px;
         left: 327.5px;
-        top: 163px;
+        top: 200px;
         overflow: visible;
         --web-animation: fadein 0.3s ease-out;
         --web-action-type: page;
@@ -313,7 +314,7 @@
         width: 307.5px;
         height: 313px;
         left: 654px;
-        top: 163px;
+        top: 200px;
         overflow: visible;
         --web-animation: fadein 0.3s ease-out;
         --web-action-type: page;
@@ -326,7 +327,7 @@
         width: 307.5px;
         height: 313px;
         left: 981px;
-        top: 163px;
+        top: 200px;
         overflow: visible;
         --web-animation: fadein 0.3s ease-out;
         --web-action-type: page;
@@ -340,7 +341,7 @@
         width: 307.5px;
         height: 313px;
         left: 0px;
-        top: 163px;
+        top: 550px;
         overflow: visible;
         --web-animation: fadein 0.3s ease-out;
         --web-action-type: page;
@@ -353,7 +354,7 @@
         width: 307.5px;
         height: 313px;
         left: 327.5px;
-        top: 163px;
+        top: 550px;
         overflow: visible;
         --web-animation: fadein 0.3s ease-out;
         --web-action-type: page;
@@ -366,7 +367,7 @@
         width: 307.5px;
         height: 313px;
         left: 654px;
-        top: 163px;
+        top: 550px;
         overflow: visible;
         --web-animation: fadein 0.3s ease-out;
         --web-action-type: page;
@@ -379,7 +380,7 @@
         width: 307.5px;
         height: 313px;
         left: 981px;
-        top: 163px;
+        top: 550px;
         overflow: visible;
         --web-animation: fadein 0.3s ease-out;
         --web-action-type: page;
@@ -395,6 +396,15 @@
 		top: 0px;
 		overflow: visible;
 	}
+    #Admin{
+        left: 550px;
+        top: 5px;
+        position: absolute;
+        overflow: visible;
+        width: 200px;
+        white-space: nowrap;
+
+    }
 	#Title {
 		position: absolute;
 		width: 1289px;
@@ -699,6 +709,15 @@
                     <A class=wsnextlink1 href="movies" style="color:rgba(255,255,255,0.345)"> Movies </A>
 
                 </div>
+                <div id="Admin">
+                    <?php
+                    if($_COOKIE["isAdmin"] == 1) {
+                        echo '<A class=wsnextlink1 href="admin" style="color:rgba(255,255,255,0.345)"> + </A>';
+                    }
+                    ?>
+
+
+                </div>
 			</div>
 		</div>
 	</div>
@@ -712,14 +731,15 @@
                 $s = $MovieRepository->getMaxSeriesIndex();
 
                 $counter = 1;
-                foreach (range(min(6,$m), 1) as $number) {
-                    $CL = $MovieRepository->getCoverLinkMovie($number);
-                    echo '<a href="playmovie?n=' .$number. '"><img id="Movie_'.$number.'" src=' . $CL . ' "/></a>';
+                foreach (range(1,min(6,$m)) as $number) {
+                    $CL = $MovieRepository->getCoverLinkMovie($m - $number);
+                    echo '<a href="playmovie?n=' .($m - $number). '"><img id="Movie_'.$number.'" src=' . $CL . ' "/></a>';
                     $counter++;
                 }
-                foreach (range(min(6,$s), 1) as $number) {
-                    $CL = $MovieRepository->getCoverLinkSeries($number);
-                    echo '<a href="playmovie?n=' .$number. '"><img id="Movie_'.$counter.'" src=' . $CL . ' "/></a>';
+                foreach (range(1,min(6,$s)) as $number) {
+                    $CL = $MovieRepository->getCoverLinkSeries($s - $number);
+                    echo '<a href="playmovie?n=' .($s - $number). '"><img id="Movie_'.$counter.'" src=' . $CL . ' "/></a>';
+                     $counter++;
                 }
 
 
@@ -758,7 +778,7 @@
 				</svg>
 			</div>
 			<div id="Movie_Center" class="Movie_Center">
-				<img id="Background_Movie_Center" src="public/img/Background_Movie_Center.png" srcset="public/img/Background_Movie_Center.png 1x, public/img/Background_Movie_Center@2x.png 2x">
+				<img id="Background_Movie_Center" src="https://i.ytimg.com/vi/z89hMn7u12Y/maxresdefault.jpg">
 					
 				<svg class="Filter_Movie_Center_bl">
 					<linearGradient id="Filter_Movie_Center_bl" spreadMethod="pad" x1="0.5" x2="0.5" y1="0" y2="1">
@@ -768,14 +788,7 @@
 					<rect id="Filter_Movie_Center_bl" rx="0" ry="0" x="0" y="0" width="1000" height="193">
 					</rect>
 				</svg>
-				<div id="Text">
-					<div id="After_the_devastatin">
-						<span>Blends the style of classic sitcoms with the MCU, in which Wanda Maximoff and Vision - two super-powered beings living their ideal suburban lives - begin to suspect that everything is not as it seems.</span>
-					</div>
-					<div id="Avengers__Endgame">
-						<span>WandaVision</span>
-					</div>
-				</div>
+
 			</div>
 			<div id="Movie_Right">
 				<svg class="Background_Movie_Righ">

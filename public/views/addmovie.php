@@ -868,7 +868,7 @@
 			</div>
 		</div>
 	</div>
-	<img id="w7tyrm8khve61" src="public/img/w7tyrm8khve61.png" srcset="public/img/w7tyrm8khve61.png 1x, public/img/w7tyrm8khve61@2x.png 2x">
+	<img id="w7tyrm8khve61" src="http://publicdomainmovie.net/wikimedia.php?id=Vampirebat.jpg">
 
 	<svg class="Rectangle_2">
 		<rect id="Rectangle_2" rx="0" ry="0" x="0" y="0" width="1" height="10">

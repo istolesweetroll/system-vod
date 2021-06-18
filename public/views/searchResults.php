@@ -2018,7 +2018,7 @@
 		</div>
 	</div>
 
-	<img id="w7tyrm8khve61" src="public/img/w7tyrm8khve61.png" srcset="public/img/w7tyrm8khve61.png 1x, public/img/w7tyrm8khve61@2x.png 2x">
+	<img id="w7tyrm8khve61" src="https://oralroberts.com/wp-content/uploads/2018/07/ad-placeholder.jpg">
 
 
                 </form>

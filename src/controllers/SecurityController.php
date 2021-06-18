@@ -28,7 +28,12 @@ class SecurityController extends AppController {
         }
 
         $url = "http://$_SERVER[HTTP_HOST]";
-        setcookie('username', $username, time() + (86400 * 30), "/"); // 86400 = 1 day
+        if($user->isAdmin() == true) {
+            setcookie('isAdmin', 1 , time() + (86400 * 30), "/"); // 86400 = 1 day
+        }
+        if($user->isAdmin() == false) {
+            setcookie('isAdmin', 0 , time() + (86400 * 30), "/"); // 86400 = 1 day
+        }
         header("Location: {$url}/series");
 
     }
@@ -55,8 +60,8 @@ class SecurityController extends AppController {
         $coverLink = $_POST['coverLink'];
         $releaseDate = $_POST['releasedate'];
         $category = $_POST['category'];
-
-        $movie = new Movie($title, $description, $fileLink, $coverLink, $releaseDate, $category);
+        $movieFactory = new MovieFactory();
+        $movie = $movieFactory->create($title, $description, $fileLink, $coverLink, $releaseDate, $category);
         $movieRepository->addMovie($movie);
 
         return $this->render('series', ['messages' => ['Movie added!']]);
@@ -70,8 +75,8 @@ class SecurityController extends AppController {
         $coverLink = $_POST['coverLink'];
         $releaseDate = $_POST['releasedate'];
         $category = $_POST['category'];
-
-        $series = new Series($title, $code, $fileLink, $coverLink, $releaseDate, $category);
+        $seriesFactory = new SeriesFactory();
+        $series = $seriesFactory->create($title, $code, $fileLink, $coverLink, $releaseDate, $category);
         $movieRepository->addSeries($series);
 
         return $this->render('series', ['messages' => ['Movie added!']]);

@@ -1,5 +1,5 @@
 <?php
-
+//Factory Method Design Pattern
 interface MediaFactory{
     public function create($title, $code, $fileLink, $coverLink, $year, $category): MediaObject;
 }
@@ -121,13 +121,13 @@ class Movie implements MediaObject{
         $this->category = $category;
     }
 
-    public function __construct($title, $description, $fileLink, $coverLink, $year, $category)
+    public function __construct($title, $description, $fileLink, $coverLink, $releaseDate, $category)
     {
         $this->title = $title;
         $this->description = $description;
         $this->fileLink = $fileLink;
         $this->coverLink = $coverLink;
-        $this->year = $year;
+        $this->releaseDate = $releaseDate;
         $this->category = $category;
     }
     public function getType():string{
@@ -268,8 +268,8 @@ class Series implements MediaObject
 };
 class MovieFactory implements MediaFactory{
 
-    public function create($title, $code, $fileLink, $coverLink, $year, $category): MediaObject{
-        return new Movie($title, $code, $fileLink, $coverLink, $year, $category);
+    public function create($title, $description, $fileLink, $coverLink, $releaseDate, $category): MediaObject{
+        return new Movie($title, $description, $fileLink, $coverLink, $releaseDate, $category);
 
     }
 }

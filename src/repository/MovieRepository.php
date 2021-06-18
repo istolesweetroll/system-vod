@@ -1,6 +1,6 @@
 <?php
 require_once 'Repository.php';
-require_once __DIR__.'/../models/Movie.php';
+require_once __DIR__ . '/../models/MediaObject.php';
 
 class MovieRepository extends Repository
 {
@@ -53,7 +53,6 @@ WHERE movie_id=(
         $maxID = (int)$maxID['movie_id'];
         return $maxID;
     }
-
     public function getMaxSeriesIndex(): int
     {
 
