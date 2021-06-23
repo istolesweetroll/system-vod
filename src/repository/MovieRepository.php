@@ -8,7 +8,7 @@ class MovieRepository extends Repository
     {
 
         $stmt = $this->database->connect()->prepare('
-            INSERT INTO movies (title, description,  filelink, coverlink, releasedate, category)
+            INSERT INTO movies (title, description,  filelink, coverlink, releasedate, category, admin_id)
             VALUES (?, ?, ?, ?, ?, ?)
         ');
 
@@ -19,6 +19,7 @@ class MovieRepository extends Repository
             $movie->getCoverLink(),
             $movie->getReleaseDate(),
             $movie->getCategory(),
+
 
         ]);
     }
