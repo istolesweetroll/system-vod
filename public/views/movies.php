@@ -589,7 +589,7 @@
 				<div id="Movies">
 
                     <?php
-                    $MovieRepository = new MovieRepository();
+                    $MovieRepository = new MediaRepository();
                     $n= $MovieRepository ->getMaxMovieIndex();
 
                     foreach (range(min(12,$n), 1) as $number) {

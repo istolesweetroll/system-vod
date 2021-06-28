@@ -3,7 +3,7 @@
 require_once 'AppController.php';
 require_once __DIR__ .'/../models/User.php';
 require_once __DIR__.'/../repository/UserRepository.php';
-require_once __DIR__.'/../repository/MovieRepository.php';
+require_once __DIR__ . '/../repository/MediaRepository.php';
 
 class SecurityController extends AppController {
     public function login()
@@ -53,7 +53,7 @@ class SecurityController extends AppController {
         return $this->render('series', ['messages' => ['You\'ve been succesfully registrered!']]);
     }
     public function addMovie(){
-        $movieRepository = new MovieRepository();
+        $movieRepository = new MediaRepository();
         $title = $_POST['title'];
         $description = $_POST['description'];
         $fileLink = $_POST['fileLink'];
@@ -68,7 +68,7 @@ class SecurityController extends AppController {
 
     }
     public function addSeries(){
-        $movieRepository = new MovieRepository();
+        $movieRepository = new MediaRepository();
         $title = $_POST['title'];
         $code = $_POST['code'];
         $fileLink = $_POST['fileLink'];
@@ -82,5 +82,4 @@ class SecurityController extends AppController {
         return $this->render('series', ['messages' => ['Movie added!']]);
 
     }
-
 }

@@ -347,8 +347,15 @@
 
 	<video width="1440" height="780" controls>
                    <?php
-        $MovieRepository = new MovieRepository();
-        $fileLink= $MovieRepository ->getFileLink($_GET["n"]);
+        $MovieRepository = new MediaRepository();
+        if(isset($_GET['n'])){
+            $fileLink= $MovieRepository ->getFileLinkMovies($_GET["n"]);
+        }
+        else{
+             $fileLink= $MovieRepository ->getFileLinkSeries($_GET["s"]);
+                   }
+
+
         echo '<source src="'.$fileLink.'" type="video/mp4">';
         ?>
           </video>

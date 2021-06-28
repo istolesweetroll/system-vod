@@ -2,7 +2,7 @@
 require_once 'Repository.php';
 require_once __DIR__ . '/../models/MediaObject.php';
 
-class MovieRepository extends Repository
+class MediaRepository extends Repository
 {
     public function addMovie(Movie $movie)
     {
@@ -93,13 +93,26 @@ WHERE series_id=(
         $coverLink = (string)$coverLink['coverlink'];
         return $coverLink;
     }
-    public function getFileLink(int $index): string
+    public function getFileLinkMovies(int $index): string
     {
 
         $stmt = $this->database->connect()->prepare('
             SELECT filelink FROM public.movies WHERE movie_id = :movie_id
         ');
         $stmt->bindParam(':movie_id', $index, PDO::PARAM_STR);
+        $stmt->execute();
+        $stmt->execute();
+        $fileLink= $stmt->fetch(PDO::FETCH_ASSOC);
+        $fileLink = (string)$fileLink['filelink'];
+        return $fileLink;
+    }
+    public function getFileLinkSeries(int $index): string
+    {
+
+        $stmt = $this->database->connect()->prepare('
+            SELECT filelink FROM public.series WHERE series_id = :series_id
+        ');
+        $stmt->bindParam(':series_id', $index, PDO::PARAM_STR);
         $stmt->execute();
         $stmt->execute();
         $fileLink= $stmt->fetch(PDO::FETCH_ASSOC);

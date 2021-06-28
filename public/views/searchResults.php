@@ -1931,7 +1931,7 @@
         <div id="Movies">
 
             <?php
-            $MovieRepository = new MovieRepository();
+            $MovieRepository = new MediaRepository();
             $m = $MovieRepository->searchMovies($_GET["title"]);
             $m_length = count($m);
             $s = $MovieRepository->searchSeries($_GET["title"]);

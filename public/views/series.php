@@ -708,12 +708,12 @@
 		<div id="Movies">
 
             <?php
-            $MovieRepository = new MovieRepository();
+            $MovieRepository = new MediaRepository();
             $n= $MovieRepository ->getMaxSeriesIndex();
 
             foreach (range(min(12,$n), 1) as $number) {
                 $CL = $MovieRepository->getCoverLinkSeries($number);
-                echo '<a href="playmovie?n=' .$number. '"><img id="Movie_'.$number.'" src=' . $CL . ' "/></a>';
+                echo '<a href="playmovie?s=' .$number. '"><img id="Movie_'.$number.'" src=' . $CL . ' "/></a>';
 
             }
 

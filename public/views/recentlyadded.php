@@ -726,7 +726,7 @@
             <div id="Movies">
 
                 <?php
-                $MovieRepository = new MovieRepository();
+                $MovieRepository = new MediaRepository();
                 $m = $MovieRepository->getMaxMovieIndex();
                 $s = $MovieRepository->getMaxSeriesIndex();
 

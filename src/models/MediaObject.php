@@ -15,7 +15,7 @@ class Movie implements MediaObject{
      * @param $description
      * @param $fileLink
      * @param $coverLink
-     * @param $year
+     * @param $releaseDate
      * @param $category
      */
     private $title;
